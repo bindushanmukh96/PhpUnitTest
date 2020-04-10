@@ -1,61 +1,45 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
-class SignupTest extends TestCase{
+use function PHPUnit\Framework\assertArrayHasKey;
+use function PHPUnit\Framework\assertContains;
 
-
-    /**
-     * @dataProvider sampleSignup
-     */
-    public function testParametes($params)
-    {
-    
-        $this->assertIsString($params);
-    }
-    /**
-     * @dataProvider sampleSignup
-     */
-    public function testParametesNotEmpty($params)
-    {
-
-       $this->assertNotEmpty($params);
-
-    }
+class SignupTest extends TestCase
+{
 
     /**
-     * @dataProvider ArrayData1
+     * @dataProvider ArrayData2
      */
-
-    public function testParametersIsPresent($data)
+    public function testFieldsEnteredNotEmpty($data)
     {
-     for($i=0;$i<count($data);$i++)
-     {  
-        
-      $this->assertNotEmpty($data[$i]);
+     foreach($data as $key)
+     {
+
+       $this->assertNotEmpty($key);
      }
-        
+     }
+    /**
+     * @dataProvider ArrayData2
+     */
+    public function testContainsAllFields($data)
+    {
+     $fields="fname";
+    //  echo $fields;
+    $this.assertArrayHasKey($fields,$data);
+     
     }
 
-    public function sampleSignup()
+
+
+
+
+    public function ArrayData2()
     {
+        // $dataset1=array("fname"=>"shawn","lname"=>"mendes", "email"=>"smendes@gmail.com","password"=>"cam56Aw","country"=>"US");
+        // $dataset2=array("fname"=>"shawn1", "lname"=>"mendes1", "email"=>"smendes1@gmail.com","password"=>"cam516Aw","country"=>"US");
         return[
-            ["fname"],
-            ["lname"],
-            ["email"],
-            ["password"],
-            ["country"]
-
-        ];
-
-    }
-
-    public function ArrayData1()
-    {
-        $dataset1=array("shawn","mendes", "smendes@gmail.com","cam56Aw","US");
-        $dataset2=array("shawn1", "mendes1", "smendes1@gmail.com","cam516Aw","US");
-        return[
-        $dataset1,
-        $dataset2
+          array("fname"=>"shawn","lname"=>"mendes", "email"=>"smendes@gmail.com","password"=>"cam56Aw","country"=>"US");
+        // array($dataset2),
        ];
 
 
@@ -64,9 +48,13 @@ class SignupTest extends TestCase{
 
 
 
+
+
+
+
+
+
+
+
+
 }
-
-
-
-
-?>
