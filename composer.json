@@ -1,0 +1,13 @@
+{
+    "name": "crc/crcsignupflow",
+    "description": "unit testing with assertions for sign up flow of crc",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^9.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    }
+}
