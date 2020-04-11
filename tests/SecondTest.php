@@ -32,6 +32,7 @@ class SecondTest extends TestCase{
      {  
         
       $this->assertNotEmpty($data[$i]);
+      $this->assertIsString($data[$i]);
      }
         
     }

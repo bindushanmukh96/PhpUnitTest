@@ -11,16 +11,29 @@ class SignupTest extends TestCase
 
 
     /**
-     * @dataProvider TestData3
+     * @dataProvider TestData5
      */
     public function testFieldsEnteredNotEmpty($data)
     {
-     foreach($data as $key)
-     {
+      for($i=0;$i<count($data);$i++)
+      {
+        $this->assertNotEmpty($data[$i]);
+      }
+     }
 
-       $this->assertNotEmpty($key);
+     /**
+     * @dataProvider TestData5
+     */
+    public function testEnteredisString($data)
+    {
+      for($i=0;$i<count($data);$i++)
+      {
+        $this->assertIsString($data[$i]);
+      }
      }
-     }
+
+
+
     
      public function TestData1()
     {
@@ -39,7 +52,19 @@ class SignupTest extends TestCase
        ];
  }
 
-
+ public function TestData5()
+ {
+ return
+ [
+ 'positive test data'=>array(array("test","sample","tessample@gmail.com","#j6kTu^","Australia")),
+ 'positive test data'=>array(array("test1","sample","tessample1@hji.com","&ghb6jag","US")),
+ 'positive test data'=>array(array("test2","sample2","tessample2@ihg.com","45687$@","US")),
+ 'positive test data'=>array(array("tests3","sample3","tesssample3@ymail.com","0)(*&^%y","australia"))
+ ];
+ 
+ 
+ 
+ }
 
  
 
