@@ -61,20 +61,19 @@ class TestData
        ];
  }
  
-
- public  function TestDataOne()
+ public  function positiveTestDataofSignUpFormOne_Two()
  {
    return
    [
-     'positive test data' => 
-     [[
+     'positive test data' =>
+     [[ 
        "test",
        "sample",
        "tessample@gmail.com",
        "#j6kTu^",
        "Australia"
        ]],
-       'positive test data' => 
+       'positive test data' =>
        [[
          "test1",
          "sample",
@@ -82,7 +81,7 @@ class TestData
          "&ghb6jag",
          "US"
          ]],
-         'positive test data' => 
+         'positive test data' =>
          [[
            "test2",
            "sample2",
@@ -100,6 +99,10 @@ class TestData
              ]]
  ];
  }
+ 
+
+ 
+
 
 
 //Negative test data where one feild is missing 
