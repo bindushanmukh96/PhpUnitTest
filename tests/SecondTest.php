@@ -40,7 +40,7 @@ class SecondTest extends TestCase{
     public function sampleSignup()
     {
         return[
-            ["fname"],
+            ["fname","name"],
             ["lname"],
             ["email"],
             ["password"],

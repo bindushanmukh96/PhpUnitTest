@@ -22,14 +22,15 @@ class SignupTest extends TestCase
      }
 
      /**
-     * @dataProvider TestData5
+     * @dataProvider  TestData5()
      */
     public function testEnteredisString($data)
     {
-      for($i=0;$i<count($data);$i++)
-      {
-        $this->assertIsString($data[$i]);
-      }
+      // for($i=0;$i<count($data);$i++)
+      // {
+        echo $data;
+        $this->assertIsString($data);
+      // }
      }
 
 
@@ -52,19 +53,20 @@ class SignupTest extends TestCase
        ];
  }
 
- public function TestData5()
- {
- return
- [
- 'positive test data'=>array(array("test","sample","tessample@gmail.com","#j6kTu^","Australia")),
- 'positive test data'=>array(array("test1","sample","tessample1@hji.com","&ghb6jag","US")),
- 'positive test data'=>array(array("test2","sample2","tessample2@ihg.com","45687$@","US")),
- 'positive test data'=>array(array("tests3","sample3","tesssample3@ymail.com","0)(*&^%y","australia"))
- ];
+ public static function TestData5()
+{
+return
+[
+["test","sample","tessample@gmail.com","#j6kTu^","Australia"],
+// 'positive test data'=>["test1","sample","tessample1@hji.com","&ghb6jag","US"],
+// 'positive test data'=>["test2","sample2","tessample2@ihg.com","45687$@","US"],
+// 'positive test data'=>["tests3","sample3","tesssample3@ymail.com","0)(*&^%y","australia"]
+];
+}
  
  
  
- }
+ 
 
  
 

@@ -66,14 +66,14 @@ class TestData
 }
 
 
-public function TestData5()
+public static function TestData5()
 {
 return
 [
-'positive test data'=>["test","sample","tessample@gmail.com","#j6kTu^","Australia"],
-'positive test data'=>["test1","sample","tessample1@hji.com","&ghb6jag","US"],
-'positive test data'=>["test2","sample2","tessample2@ihg.com","45687$@","US"],
-'positive test data'=>["tests3","sample3","tesssample3@ymail.com","0)(*&^%y","australia"]
+'positive test data'=>array(array("test","sample","tessample@gmail.com","#j6kTu^","Australia")),
+'positive test data'=>array(array("test1","sample","tessample1@hji.com","&ghb6jag","US")),
+'positive test data'=>array(array("test2","sample2","tessample2@ihg.com","45687$@","US")),
+'positive test data'=>array(array("tests3","sample3","tesssample3@ymail.com","0)(*&^%y","australia"))
 ];
 }
 
@@ -83,10 +83,10 @@ public function TestData6()
 {
 return
 [
-'negative test data email incorrect'=>["test","sample","tessamplegmail.com","#j6kTu^","Australia"],
-'negative test data email incorrect'=>["test1","sample","tessample1@hjicom","&ghb6jag","US"],
-'negative test data email incorrect'=>["test2","sample2","123452@@ihg.com","45687$@","US"],
-'negative test data email incorrect'=>["tests3","sample3","tess987653@.com","0)(*&^%y","australia"]
+'negative test data email incorrect'=>array(array("test","sample","tessamplegmail.com","#j6kTu^","Australia")),
+'negative test data email incorrect'=>array(array("test1","sample","tessample1@hjicom","&ghb6jag","US")),
+'negative test data email incorrect'=>array(array("test2","sample2","123452@@ihg.com","45687$@","US")),
+'negative test data email incorrect'=>array(array("tests3","sample3","tess987653@.com","0)(*&^%y","australia"))
 ];
 }
 
