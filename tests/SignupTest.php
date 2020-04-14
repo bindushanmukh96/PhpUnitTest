@@ -1,5 +1,6 @@
 <?php
-require './data/TestData.php';
+require '/data/TestData.php';
+// require 'TestDataForm2.php';
 use PHPUnit\Framework\TestCase;
 
 use function PHPUnit\Framework\assertContains;
@@ -7,11 +8,9 @@ use function PHPUnit\Framework\assertContains;
 class SignupTest extends TestCase
 {
  
- 
-// public $provider= new TestData();
-
+    //  Positive assert test to check that string is not empty
     /**
-     * @dataProvider positiveTestDataofSignUpFormOne_Two()
+     * @dataProvider TestData::positiveTestDataOfUserCardInfoTwo()
      */
     public function testFieldsEnteredNotEmpty($data)
     {
@@ -22,10 +21,28 @@ class SignupTest extends TestCase
      }
 
     
-     /**
-     * @dataProvider TestData::positiveTestDataofSignUpFormOne_One
+    
+
+    
+    //Positive assert test to check that string or not
+    /**
+     * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoThree()
      */
-    public function testArrayKeynotEmpty($data)
+    public function testEnteredIsString($data)
+    {
+      for($i=0;$i<count($data);$i++)
+      {
+        $this->assertIsString($data[$i]);
+      }
+     }
+      
+
+
+     //Positive assert test to check that key in array is not empty
+      /**
+     * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoTwo()
+     */
+    public function testArrayKeyNotEmpty($data)
     {
       foreach($data as $key)
       {
@@ -34,70 +51,82 @@ class SignupTest extends TestCase
       }
     }
 
-    
-    
-    /**
-     * @dataProvider TestData::positiveTestDataOfSignUpFormOne_Two
-     */
-    public function testEnteredisString($data)
-    {
-      for($i=0;$i<count($data);$i++)
-      {
-        $this->assertIsString($data[$i]);
-      }
-     }
+     
 
-    /**
-     * @dataProvider TestData::positiveTestDataOfSignUpFormTwo_Two
+     //Positive assert test to check that key in array is string or not
+      /**
+     * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoTwo()
      */
-    public function testArrayisEmpty($data)
+    public function testArrayKeyIsString($data)
     {
       foreach($data as $key)
       {
-       $this->assertEmpty($key);
-
+     echo $key;
+      $this->assertIsString($key);
       }
+    }
 
+    
+
+    // assert test to check that email is valid 
+    /**
+     * @dataProvider TestData::positiveTestDataForEmailValidation()
+     */
+    public function testEmailIsValid($data)
+    {
+      $pattern='/^[A-Za-z0-9_\-]+(\.[A-Za-z0-9_\-]+)*\@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*(\.[A-Za-z]{2,16})$/';
+      $this->assertMatchesRegularExpression($pattern,$data);
 
     }
-    public  function positiveTestDataofSignUpFormOne_Two()
-{
-  return
-  [
-    'positive test data' =>
-    [[ 
-      "test",
-      "sample",
-      "tessample@gmail.com",
-      "#j6kTu^",
-      "Australia"
-      ]],
-      'positive test data' =>
-      [[
-        "test1",
-        "sample",
-        "tessample1@hji.com",
-        "&ghb6jag",
-        "US"
-        ]],
-        'positive test data' =>
-        [[
-          "test2",
-          "sample2",
-          "tessample2@ihg.com",
-          "45687$@",
-          "US"
-          ]],
-          'positive test data' =>
-          [[
-            "tests3",
-            "sample3",
-            "tesssample3@ymail.com",
-            "0)(*&^%y",
-            "australia"
-            ]]
-];
-}
+
+
+
+    // assert test to check that email is  not valid 
+     /**
+     * @dataProvider TestData::negativeTestDataForEmailValidation()
+     */
+    public function testEmailIsnotValid($data)
+    {
+      $pattern='/^[A-Za-z0-9_\-]+(\.[A-Za-z0-9_\-]+)*\@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*(\.[A-Za-z]{2,16})$/';
+      $this->assertDoesNotMatchRegularExpression($pattern,$data);
+
+    }
+
+
+     // assert test to check that email is valid 
+    /**
+     * @dataProvider TestData::positiveTestDataForPasswordValidation()
+     */
+    public function testPasswordIsValid($data)
+    {
+      $pattern = "((?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{8,8})";
+
+      $this->assertMatchesRegularExpression($pattern,$data);
+
+    }
+
+   
+
+    // assert test to check that all parameters are empty 
+     /**
+     * @dataProvider TestDataForm2::negativeTestDataOfUserDetailsThree()
+     */
+    public function testAllAssociativeArrayDataIsEmpty($data)
+    {
+      foreach($data as $key)
+      {
+   
+      $this->assertEmpty($key);
+      }
+
+    }
+
+
+
+   
+  
+
+
      
 
     
