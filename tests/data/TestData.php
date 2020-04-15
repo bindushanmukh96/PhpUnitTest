@@ -454,36 +454,37 @@ public function positiveTestDataForPasswordValidation()
     ];
 }
 
-/**
+ /**
  * Negative Test Data for password validation
  * use this test data for  password validating assert condition
  */
 public function negativeTestDataForPasswordValidation()
 {
+  return
   [
     'negative test data one' =>
     [
-      "fht983@789"
+      "@Ghutrit"
     ],
     'negative test data two' =>
     [
-      "TKHjk7fsri"
+      "&resfvnl"
     ],
     'negative test data three' =>
     [
-      "ryrs8dkous"
+      "@1234567"
     ],
     'negative test data four' =>
     [
-      "1234456780"
+      "TjIYRgTb"
     ],
     'negative test data five' =>
     [
-      "!@#$%yk%$$)(*"
+      "JTREWQSD"
     ],
     'negative test data six' =>
     [
-      "SGgjh8%kyda"
+      "Tgjui7gd"
     ]
   ];
 }

@@ -1,6 +1,6 @@
 <?php
-// require 'data/TestData.php';
-require 'data/TestDataForm2.php';
+require 'data/TestData.php';
+// require 'data/TestDataForm2.php';
 use PHPUnit\Framework\TestCase;
 
 use function PHPUnit\Framework\assertContains;
@@ -102,6 +102,19 @@ class SignupTest extends TestCase
       $pattern = "/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/";
 
       $this->assertMatchesRegularExpression($pattern,$data);
+
+    }
+
+    // assert test to check that password is not valid 
+    /**
+     * @dataProvider TestData::negativeTestDataForPasswordValidation()
+     */
+    public function testPasswordIsNotValid($data)
+    {
+      $pattern = "/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/";
+      echo $data;
+
+      $this->assertDoesNotMatchRegularExpression($pattern,$data);
 
     }
 
