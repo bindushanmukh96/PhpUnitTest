@@ -430,7 +430,7 @@ public function positiveTestDataForMobileNumberValidation()
  * Negative Test Data for mobile number validation
  * use this test data for  mobile number not valid assert condition
  */
-public function negativeTestDataForEmailValidation()
+public function negativeTestDataForMobileNumberValidation()
 {
   return
   [

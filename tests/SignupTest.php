@@ -1,6 +1,6 @@
 <?php
-require '/data/TestData.php';
-// require 'TestDataForm2.php';
+// require 'data/TestData.php';
+require 'data/TestDataForm2.php';
 use PHPUnit\Framework\TestCase;
 
 use function PHPUnit\Framework\assertContains;
@@ -10,7 +10,7 @@ class SignupTest extends TestCase
  
     //  Positive assert test to check that string is not empty
     /**
-     * @dataProvider TestData::positiveTestDataOfUserCardInfoTwo()
+     * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoThree()
      */
     public function testFieldsEnteredNotEmpty($data)
     {
@@ -40,7 +40,7 @@ class SignupTest extends TestCase
 
      //Positive assert test to check that key in array is not empty
       /**
-     * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoTwo()
+     * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoFour()
      */
     public function testArrayKeyNotEmpty($data)
     {
@@ -55,7 +55,7 @@ class SignupTest extends TestCase
 
      //Positive assert test to check that key in array is string or not
       /**
-     * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoTwo()
+     * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoFour()
      */
     public function testArrayKeyIsString($data)
     {
@@ -93,23 +93,25 @@ class SignupTest extends TestCase
     }
 
 
-     // assert test to check that email is valid 
+     // assert test to check that password is valid 
     /**
      * @dataProvider TestData::positiveTestDataForPasswordValidation()
      */
     public function testPasswordIsValid($data)
     {
-      $pattern = "((?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{8,8})";
+      $pattern = "/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/";
 
       $this->assertMatchesRegularExpression($pattern,$data);
 
     }
 
+     
+
    
 
     // assert test to check that all parameters are empty 
      /**
-     * @dataProvider TestDataForm2::negativeTestDataOfUserDetailsThree()
+     * @dataProvider TestDataForm2::negativeTestDataOfUserCardInfoThree()
      */
     public function testAllAssociativeArrayDataIsEmpty($data)
     {
@@ -119,6 +121,33 @@ class SignupTest extends TestCase
       $this->assertEmpty($key);
       }
 
+    }
+    
+      // assert test to check that all parameters are not string 
+     /**
+     * @dataProvider TestDataForm2::negativeTestDataOfUserCardInfoOne()
+     */
+    public function testArrayDataIsNotString($data)
+    {
+      for($i=0;$i<count($data);$i++)
+      {
+   
+      $this->assertIsNotString($data);
+      }
+
+    }
+
+      // assert test to check that all parameters are not string
+     /**
+     * @dataProvider TestDataForm2::negativeTestDataOfUserCardInfoTwo()
+     */
+    public function testAllAssociativeArrayDataIsNotString($data)
+    {
+      foreach($data as $key)
+      {
+   
+      $this->assertIsNotString($key);
+      }
     }
 
 

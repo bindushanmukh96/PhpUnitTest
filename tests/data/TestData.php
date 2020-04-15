@@ -467,11 +467,11 @@ public function negativeTestDataForPasswordValidation()
     ],
     'negative test data two' =>
     [
-      "TKHjkfsri"
+      "TKHjk7fsri"
     ],
     'negative test data three' =>
     [
-      "ryrsdkous"
+      "ryrs8dkous"
     ],
     'negative test data four' =>
     [
@@ -479,11 +479,11 @@ public function negativeTestDataForPasswordValidation()
     ],
     'negative test data five' =>
     [
-      "!@#$%%%%$$)(*"
+      "!@#$%yk%$$)(*"
     ],
     'negative test data six' =>
     [
-      "SGgjhkyda"
+      "SGgjh8%kyda"
     ]
   ];
 }
