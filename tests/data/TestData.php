@@ -17,47 +17,47 @@ class TestData
     {
         $dataset1 = 
         [[
-          "fname"=>"    test",
-          "lname"=>"    sample",
-          "email"=>"    tsample@gmail.com",
-          "password"=>"  cam56Aw",
+          "FirstName"=>"    test",
+          "LastName"=>"    sample",
+          "Email"=>"    tsample@gmail.com",
+          "Password"=>"  cam56Aw",
           ]];
         $dataset2 = 
         [[
-          "fname"=>"test26   ",
-          "lname"=>"sample1   ",
-          "email"=>"tsample1@gmail.com   ",
-          "password"=>"   cam516Aw",
+          "FirsName"=>"test26   ",
+          "LastName"=>"sample1   ",
+          "Email"=>"tsample1@gmail.com   ",
+          "Password"=>"   cam516Aw",
           ]];
         $dataset3 = 
         [[
-          "fname"=>"test2   ",
-          "lname"=>"Sample22e   ",
-          "email"=>"tsample2@gmail.com   ",
-          "password"=>"Cgaju$7   ",
+          "FirstName"=>"test2   ",
+          "LastName"=>"Sample22e   ",
+          "Email"=>"tsample2@gmail.com   ",
+          "Password"=>"Cgaju$7   ",
           ]];
         $dataset4 = 
         [[
-          "fname"=>"    test3   ",
-          "lname"=>"   sample3  ",
-          "email"=>"  tsample3@gmail.com   ",
-          "password"=>"   1234567   ",
+          "FirstName"=>"    test3   ",
+          "LastName"=>"   sample3  ",
+          "Email"=>"  tsample3@gmail.com   ",
+          "Password"=>"   1234567   ",
           ]];
         $dataset5 = 
         [[
-          "fname"=>"     test4 ",
-          "lname"=>"     sample4 ",
-          "email"=>"     tsample4@gmail.com ",
-          "password"=>"   Cgaju&7 ",
+          "FirstName"=>"     test4 ",
+          "LastName"=>"     sample4 ",
+          "Email"=>"     tsample4@gmail.com ",
+          "Password"=>"   Cgaju&7 ",
           ]];
         
         return
         [
-        'postive test data set one' => $dataset1,
-        'postive test data set two' => $dataset2,
-        'postive test data set three' => $dataset3,
-        'postive test data set four' => $dataset4,
-        'postive test data set five' => $dataset5
+        'postive test data in the form of associative array set one' => $dataset1,
+        'postive test data in the form of associatve array set two' => $dataset2,
+        'postive test data in the form of associative array set three' => $dataset3,
+        'postive test data in the form of associative array set four' => $dataset4,
+        'postive test data in the form of associative array set five' => $dataset5
        ];
  }
  
@@ -73,28 +73,28 @@ class TestData
  {
    return
    [
-     'positive test data set one' =>
+     'positive test data in the form of array set one' =>
      [[ 
        "   test   ",
        "   sample   ",
        "    tessample@gmail.com   ",
        "  #j6kTu^  ",
        ]],
-       'positive test data set two' =>
+       'positive test data in the form of array set two' =>
        [[
          "   test1  ",
          "  sample  ",
          "   tessample1@hji.com  ",
          "   &ghb6jag  ",
          ]],
-         'positive test data set three' =>
+         'positive test data in form of array set three' =>
          [[
            "  test2  ",
            "  sample2  ",
            "  tessample2@ihg.com  ",
            "   45687$@  ",
            ]],
-           'positive test data set five' =>
+           'positive test data in form of array set five' =>
            [[
              "  tests3   ",
              "   sample3  ",
@@ -114,45 +114,45 @@ class TestData
     {
       $dataset1 = 
       [[
-        "fname" => "",
-        "lname" => "   sample", 
-        "email" => "  tsample6@gmail.com",
-        "password" => "  cam56Aw",
+        "FirstName" => "",
+        "LastName" => "   sample", 
+        "Email" => "  tsample6@gmail.com",
+        "Password" => "  cam56Aw",
         ]];
       $dataset2 = 
       [[
-        "fname" => "test1   ", 
-        "lname" => "", 
-        "email" => "tsample7@gmail.com  ",
-        "password" => "cam516Aw  ",
+        "FirstName" => "test1   ", 
+        "LastName" => "", 
+        "Email" => "tsample7@gmail.com  ",
+        "Password" => "cam516Aw  ",
         ]];
       $dataset3 = 
       [[
-        "fname" => "  test2  ",
-        "lname"=> "   sample2  ",
-        "email"=> "",
-        "password"=> "  Cgaju$7  ",
+        "FirstName" => "  test2  ",
+        "LastName"=> "   sample2  ",
+        "Email"=> "",
+        "Password"=> "  Cgaju$7  ",
         ]];
       $dataset4 = 
       [[
-        "fname" => "  test46  ",
-        "lname" => "  sampler4  ",
-        "email" => "   tsample4@gmail.com  ",
-        "password" => "   Cgajfu&7   ",
+        "FirstName" => "  test46  ",
+        "LastName" => "  sampler4  ",
+        "Email" => "   tsample4@gmail.com  ",
+        "Password" => "   Cgajfu&7   ",
         ]];
       $dataset5 = 
       [[
-        "fname" => " test3",
-        "lname" => "sample3",
-        "email" => "tsample8@gmail.com",
+        "FirstName" => " test3",
+        "LastName" => "sample3",
+        "Email" => "tsample8@gmail.com",
         "password" => "",
         ]];
       $dataset6 = 
       [[
-        "fname" => "test4",
-        "lname" => "sample4",
-        "email" => "tsample9@gmail.com",
-        "password" => "Cgaju&7",
+        "FirstName" => "test4",
+        "LastName" => "sample4",
+        "Email" => "tsample9@gmail.com",
+        "Password" => "Cgaju&7",
         ]];
         return
         [
@@ -175,45 +175,45 @@ class TestData
  {
      $dataset1 = 
      [[
-       "fname" => "test",
-       "lname" => "", 
-       "email" => "",
-       "password"=>"",
+       "FirstName" => "test",
+       "LastName" => "", 
+       "Email" => "",
+       "Password"=>"",
        ]];
      $dataset2 =
      [[
-       "fname" => "", 
-       "lname" => "sample1",
-       "email" => "",
+       "FirstName" => "", 
+       "LastName" => "sample1",
+       "Email" => "",
        "password" => "",
        ]];
      $dataset3 =
      [[
-       "fname" => "",
-       "lname" => "",
-       "email" => "     tsample22@gmail.com",
-       "password" => "",
+       "FirstName" => "",
+       "LastName" => "",
+       "Email" => "     tsample22@gmail.com",
+       "Password" => "",
        ]];
      $dataset4 = 
      [[
-       "fname" => "",
-       "lname" => "",
-       "email" => "",
-       "password" => "1234567",
+       "FirstName" => "",
+       "LastName" => "",
+       "Email" => "",
+       "Password" => "1234567",
       ]];
      $dataset5 =
      [[
-       "fname" => "",
-       "lname" => "",
-       "email" => "",
-       "password" => "",
+       "FirstName" => "",
+       "LastName" => "",
+       "Email" => "",
+       "Password" => "",
        ]];
      $dataset6 =
      [[
-      "fname" => "tests466",
-      "lname" => "sample3",
-      "email" => "tess66sample3@ymail.com",
-      "password" => "0)(*77hA6jfd32ty&^%y",
+      "FirstName" => "tests466",
+      "LastName" => "sample3",
+      "Email" => "tess66sample3@ymail.com",
+      "Password" => "0)(*77hA6jfd32ty&^%y",
        ]];
      
 
@@ -237,56 +237,56 @@ class TestData
     {
         $dataset1 = 
         [[
-          "fname" => "",
-          "lname" => "", 
-          "email" => "",
-          "password"=>"",
+          "FirstName" => "",
+          "LastName" => "", 
+          "Email" => "",
+          "Password"=>"",
           ]];
         $dataset2 =
         [[
-          "fname" => "", 
-          "lname" => "",
-          "email" => "",
-          "password" => "",
+          "FirstName" => "", 
+          "LastName" => "",
+          "Email" => "",
+          "Password" => "",
           ]];
         $dataset3 =
         [[
-          "fname" => "",
-          "lname" => "",
-          "email" => "",
-          "password" => "",
+          "FirstName" => "",
+          "LastName" => "",
+          "Email" => "",
+          "Password" => "",
           ]];
         $dataset4 = 
         [[
-          "fname" => "",
-          "lname" => "",
-          "email" => "",
-          "password" => "",
+          "FirstName" => "",
+          "LastName" => "",
+          "Email" => "",
+          "Password" => "",
          ]];
         $dataset5 =
         [[
-          "fname" => "",
-          "lname" => "",
-          "email" => "",
-          "password" => "",
+          "FirstName" => "",
+          "LastName" => "",
+          "Email" => "",
+          "Password" => "",
           ]];
         $dataset6 =
         [[
-         "fname" => "",
-         "lname" => "",
-         "email" => "",
-         "password" => "",
+         "FirstName" => "",
+         "LastName" => "",
+         "Email" => "",
+         "Password" => "",
           ]];
         
    
         return
         [
-        'negative test data  set one' => $dataset1,
-        'negative test data  set two' => $dataset2,
-        'negative test data  set three' => $dataset3,
-        'negative test data  set four' => $dataset4,
-        'negative test data  set five' => $dataset5,
-        'negative test data   set six' => $dataset6,
+        'negative test data where all parameters are empty set one' => $dataset1,
+        'negative test data where all parameters are empty set two' => $dataset2,
+        'negative test data where all parameters are empty set three' => $dataset3,
+        'negative test data where all parameters are empty set four' => $dataset4,
+        'negative test data where all parameters are empty set five' => $dataset5,
+        'negative test data where all parameters are empty  set six' => $dataset6,
        ];
    }
 
@@ -300,29 +300,29 @@ class TestData
     {
         $dataset1 = 
         [[
-          "fname" => "test1",
-          "lname" => "Sample1", 
-          "email" => "",
-          "password"=>"",
+          "FirstName" => "test1",
+          "LastName" => "Sample1", 
+          "Email" => "",
+          "Password"=>"",
           ]];
         $dataset2 =
         [[
-          "fname" => "Test131", 
-          "lname" => "",
-          "email" => "Test445Sample@gmail.com",
-          "password" => "",
+          "FirstName" => "Test131", 
+          "LastName" => "",
+          "Email" => "Test445Sample@gmail.com",
+          "Password" => "",
           ]];
         $dataset3 =
         [[
-          "fname" => "Test72",
-          "lname" => "",
-          "email" => "",
-          "password" => "%6hIuT3h",
+          "FirstName" => "Test72",
+          "LastName" => "",
+          "Email" => "",
+          "Password" => "%6hIuT3h",
           ]]; return
         [
-        'negative test data  set one' => $dataset1,
-        'negative test data  set two' => $dataset2,
-        'negative test data  set three' => $dataset3,
+        'negative test data where only two paramters are not empty set one' => $dataset1,
+        'negative test data where only two parameters are not empty set two' => $dataset2,
+        'negative test data where only two parameters are not empty set three' => $dataset3,
        ];
    }
 
@@ -336,29 +336,29 @@ class TestData
     {
         $dataset1 = 
         [[
-          "fname" => "",
-          "lname" => "Sample91", 
-          "email" => "Sample91@yahoo.co.in",
-          "password"=>"",
+          "FirstName" => "",
+          "LastName" => "Sample91", 
+          "Email" => "Sample91@yahoo.co.in",
+          "Password"=>"",
           ]];
         $dataset2 =
         [[
-          "fname" => "", 
-          "lname" => "Sample65",
-          "email" => "",
-          "password" => "%7hIkTh0",
+          "FirstName" => "", 
+          "LastName" => "Sample65",
+          "Email" => "",
+          "Password" => "%7hIkTh0",
           ]];
         $dataset3 =
         [[
-          "fname" => "",
-          "lname" => "",
-          "email" => "TestSample657@hij.org",
-          "password" => "%6hIuT3h",
+          "FirstName" => "",
+          "LastName" => "",
+          "Email" => "TestSample657@hij.org",
+          "Password" => "%6hIuT3h",
           ]]; return
         [
-        'negative test data  set one' => $dataset1,
-        'negative test data  set two' => $dataset2,
-        'negative test data  set three' => $dataset3,
+        'negative test data where only two paramters are not empty set one' => $dataset1,
+        'negative test data where only two parameters are not empty set two' => $dataset2,
+        'negative test data where only two paramters are not empty set three' => $dataset3,
        ];
    }
    
@@ -444,7 +444,7 @@ public function negativeTestDataForEmailValidation()
 {
   return
   [
-    'negative test data one' => ["TestSample_a@@.com"],
+  'negative test data one' => ["TestSample_a@@.com"],
   'negative test data two' => ["testingsample h@.yahhoo.com"],
   'negative test data three' => [".testingsample66@hotmail.com"],
   'negative test data four' => ["testingsample..@mail.org"],

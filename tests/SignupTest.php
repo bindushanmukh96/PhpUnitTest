@@ -68,7 +68,6 @@ class SignupTest extends TestCase
     {
       foreach($data as $key)
       {
-     echo $key;
       $this->assertNotEmpty($key);
       }
     }
@@ -101,7 +100,6 @@ class SignupTest extends TestCase
     {
       foreach($data as $key)
       {
-     echo $key;
       $this->assertIsString($key);
       }
     }
@@ -193,7 +191,7 @@ class SignupTest extends TestCase
     public function testPasswordIsNotValid($data)
     {
       $pattern = "/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/";
-      echo $data;
+    
 
       $this->assertDoesNotMatchRegularExpression($pattern,$data);
 

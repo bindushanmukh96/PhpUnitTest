@@ -1,5 +1,5 @@
 <?php
-require 'TestData.php';
+require 'data/TestData.php';
 use PHPUnit\Framework\TestCase;
 
 use function PHPUnit\Framework\assertContains;
