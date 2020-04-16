@@ -61,34 +61,34 @@ class TestDataForm2
       [
         'positive test data as associative array set one' =>
         [[
-          "Phone Number" => "   (898)-567809",
-          "credit card" => "    3097186382167369",
-          "cvv" => "   846"
+          "MobileNumber" => "   (898)-567809",
+          "Creditcard" => "    3097186382167369",
+          "Cvv" => "   846"
 
         ]],
         'positive test data as associative array set two' =>
         [[
-          "Phone Number" => "(741)-617749     ",
-          "credit card" => "4912306179265296   ",
-          "cvv" => "730    ",
+          "MobileNumber" => "(741)-617749     ",
+          "CreditCard" => "4912306179265296   ",
+          "Cvv" => "730    ",
         ]],
         'positive test data as associative array set three' =>
         [[
-          "Phone Number" => "    (517)-020409",
-          "credit card" => "     8201739442968164",
-          "cvv" => "   385",
+          "MobileNumber" => "    (517)-020409",
+          "CreditCard" => "     8201739442968164",
+          "Cvv" => "   385",
         ]],
         'positive test data as associative array set four' =>
         [[
-          "Phone Number" => "    (518)-832641    ",
-          "credit card" => "   7290701927946190    ",
-          "cvv" => "    861    ",
+          "MobileNumber" => "    (518)-832641    ",
+          "CreditCard" => "   7290701927946190    ",
+          "Cvv" => "    861    ",
         ]],
         'positive test data as associative array set five' =>
         [[
-          "Phone Number" => "   (293)-382272   ",
-          "credit card" => "   7629274035292648   ",
-          "cvv" => "   472   ",
+          "MobileNumber" => "   (293)-382272   ",
+          "CreditCard" => "   7629274035292648   ",
+          "Cvv" => "   472   ",
         ]]
       ];
     }
@@ -153,33 +153,33 @@ class TestDataForm2
       [
         'positive test data in the form of associative array set one'=>
         [[
-          "Phone Number" => "      (02)38738227",
-          "credit card" => "2782936498943648     ",
-          "cvv" => "   628",
+          "MobileNumber" => "      (02)38738227",
+          "CreditCard" => "2782936498943648     ",
+          "Cvv" => "   628",
         ]],
         'positive test data in the form of associative array set two'=>
         [[
-          "Phone Number" => "    (04)28734763   ",
-          "credit card" => "2873867302610338      ",
-          "cvv" => "836  ",
+          "MobileNumber" => "    (04)28734763   ",
+          "CreditCard" => "2873867302610338      ",
+          "Cvv" => "836  ",
         ]],
         'positive test data in the form of associative array set Three'=>
         [[
-          "Phone Number" => "     (02)38739462 ",
-          "credit card" => "    3762387493529462   ",
-          "cvv" => " 236  ",
+          "MobileNumber" => "     (02)38739462 ",
+          "CreditCard" => "    3762387493529462   ",
+          "Cvv" => " 236  ",
         ]],
         'positive test data in the form of associative array set four'=>
         [[
-          "Phone Number" => "   (04)76282721  ",
-          "credit card" => "   7637 9362 8362 9364   ",
-          "cvv" => "  729  ",
+          "MobileNumber" => "   (04)76282721  ",
+          "CreditCard" => "   7637 9362 8362 9364   ",
+          "Cvv" => "  729  ",
         ]],
         'positive test data in the form of associative array set five'=>
         [[
-          "Phone Number" => "  (02)82639473",
-          "credit card" => "8782696392528462   ",
-          "cvv" => "  287  ",
+          "MobileNumber" => "  (02)82639473",
+          "CreditCard" => "8782696392528462   ",
+          "Cvv" => "  287  ",
         ]]
 
       ];
@@ -241,33 +241,33 @@ class TestDataForm2
       [
         'negative test data set one'=>
         [[
-          "Phone Number" => (738)-737383,
-          "credit card" => 7364285478253727,
-          "cvv" => 792,
+          "MobileNumber" => (738)-737383,
+          "CreditCard" => 7364285478253727,
+          "Cvv" => 792,
         ]],
         'negative test data set two'=>
         [[
-          "Phone Number" => (637)-352836,
-          "credit card" => 6382926353825782,
-          "cvv" => 291,
+          "MobileNumber" => (637)-352836,
+          "CreditCard" => 6382926353825782,
+          "Cvv" => 291,
         ]],
         'negative test data set three'=>
         [[
-          "Phone Number" => (529)-672317,
-          "credit card" => 5283467837529635,
-          "cvv" => 536,
+          "MobileNumber" => (529)-672317,
+          "CreditCard" => 5283467837529635,
+          "Cvv" => 536,
         ]],
         'negative test data set four'=>
         [[
-          "Phone Number" => (282)-729263,
-          "credit card" => 9273000729724291,
-          "cvv" => 892,
+          "MobileNumber" => (282)-729263,
+          "CreditCard" => 9273000729724291,
+          "Cvv" => 892,
         ]],
         'negative test data set five'=>
         [[
-          "Phone Number" => (816)-272817,
-          "credit card" => 8293572439178202,
-          "cvv" => 729,
+          "MobileNumber" => (816)-272817,
+          "CreditCard" => 8293572439178202,
+          "Cvv" => 729,
         ]]
 
       ];
@@ -286,33 +286,33 @@ class TestDataForm2
       [
         'negative test data where all values are empty set one'=>
         [[
-          "Phone Number" => "",
-          "credit card" => "",
-          "cvv" => "",
+          "MobileNumber" => "",
+          "CreditCard" => "",
+          "Cvv" => "",
         ]],
         'negative test data where all values are empty set two'=>
         [[
-          "Phone Number" => "",
-          "credit card" => "",
-          "cvv" => "",
+          "MobileNumber" => "",
+          "CreditCard" => "",
+          "Cvv" => "",
         ]],
         'negative test data where all values are empty set three'=>
         [[
-          "Phone Number" => "",
-          "credit card" => "",
-          "cvv" => "",
+          "MobileNumber" => "",
+          "CreditCard" => "",
+          "Cvv" => "",
         ]],
         'negative test data where all values are empty set four'=>
         [[
-          "Phone Number" => "",
+          "MobileNumber" => "",
           "credit card" => "",
-          "cvv" => "",
+          "Cvv" => "",
         ]],
         'negative test data where all values are empty set five'=>
         [[
-          "Phone Number" => "",
-          "credit card" => "",
-          "cvv" => "",
+          "MobileNumber" => "",
+          "CreditCard" => "",
+          "Cvv" => "",
         ]]
 
       ];
@@ -330,33 +330,33 @@ class TestDataForm2
       [
         'positive test data where one parameter is empty set one'=>
         [[
-          "Phone Number" => "      (04)39738827",
-          "credit card" => "",
-          "cvv" => "   348",
+          "MobileNumber" => "      (04)39738827",
+          "CreditCard" => "",
+          "Cvv" => "   348",
         ]],
         'positive test data where one parameter is empty set two'=>
         [[
-          "Phone Number" => "",
-          "credit card" => "3475067302610338      ",
-          "cvv" => "506  ",
+          "MobileNumber" => "",
+          "CreditCard" => "3475067302610338      ",
+          "Cvv" => "506  ",
         ]],
         'positive test data where one parameter is empty set Three'=>
         [[
-          "Phone Number" => "     (04)78732492 ",
-          "credit card" => "    3163347443519462   ",
-          "cvv" => "",
+          "MobileNumber" => "     (04)78732492 ",
+          "CreditCard" => "    3163347443519462   ",
+          "Cvv" => "",
         ]],
         'positive test data where one parameter is empty set four'=>
         [[
-          "Phone Number" => "   (02)79222451  ",
-          "credit card" => "   5697 9672 8622 9764   ",
-          "cvv" => "  256  ",
+          "MobileNumber" => "   (02)79222451  ",
+          "CreditCard" => "   5697 9672 8622 9764   ",
+          "Cvv" => "  256  ",
         ]],
         'positive test data where one parameter is empty set five'=>
         [[
-          "Phone Number" => "  (02)82639473",
-          "credit card" => "8154927402730472   ",
-          "cvv" => "  643  ",
+          "MobileNumber" => "  (02)82639473",
+          "CreditCard" => "8154927402730472   ",
+          "Cvv" => "  643  ",
         ]],
 
       ];
@@ -374,21 +374,21 @@ class TestDataForm2
       [
         'positive test data where only one parameter is not empty set one'=>
         [[
-          "Phone Number" => "",
-          "credit card" => "  9173751992619629",
-          "cvv" => "",
+          "MobileNumber" => "",
+          "CreditCard" => "  9173751992619629",
+          "Cvv" => "",
         ]],
         'positive test data where only parameter is not empty set two'=>
         [[
-          "Phone Number" => "   (04)91639263  ",
-          "credit card" => "",
-          "cvv" => "",
+          "MobileNumber" => "   (04)91639263  ",
+          "CreditCard" => "",
+          "Cvv" => "",
         ]],
         'positive test data where only one parameter is not empty set Three'=>
         [[
-          "Phone Number" => "",
-          "credit card" => "",
-          "cvv" => "934",
+          "MobileNumber" => "",
+          "Creditcard" => "",
+          "Cvv" => "934",
         ]],
       ];
     }
@@ -403,27 +403,27 @@ class TestDataForm2
       [
         'positive test data where only one parameter is empty set one'=>
         [[
-          "Phone Number" => "(064)852875",
-          "credit card" => "  9173751992619629",
-          "cvv" => "",
+          "MobileNumber" => "(064)852875",
+          "CreditCard" => "  9173751992619629",
+          "Cvv" => "",
         ]],
         'positive test data where only one parameter is empty set two'=>
         [[
-          "Phone Number" => "   (04)91639263  ",
-          "credit card" => "  6274748502749639  ",
-          "cvv" => "",
+          "MobileNumber" => "   (04)91639263  ",
+          "CreditCard" => "  6274748502749639  ",
+          "Cvv" => "",
         ]],
         'positive test data where only one parameter is empty set Three'=>
         [[
-          "Phone Number" => "(284)929475",
-          "credit card" => "",
-          "cvv" => "934",
+          "MobileNumber" => "(284)929475",
+          "CreditCard" => "",
+          "Cvv" => "934",
         ]],
         'positive test data where only one parameter is empty set four'=>
         [[
-          "Phone Number" => "",
-          "credit card" => "8354772502749264",
-          "cvv" => "947",
+          "MobileNumber" => "",
+          "CreditCard" => "8354772502749264",
+          "Cvv" => "947",
         ]],
       ];
     }

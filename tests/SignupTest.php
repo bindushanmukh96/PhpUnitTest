@@ -1,6 +1,7 @@
 <?php
 require 'data/TestData.php';
 require 'data/TestDataForm2.php';
+require 'data/ZapierTestData.php';
 use PHPUnit\Framework\TestCase;
 
 use function PHPUnit\Framework\assertContains;
@@ -15,6 +16,7 @@ class SignupTest extends TestCase
      * @dataProvider TestData::positiveTestDataOfUserDetailsTwo()
      * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoOne()
      * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoThree()
+     * @dataProvider ZapierTestData::positiveTestDataOfZapOne()
      */
     public function testFieldsEnteredNotEmpty($data)
     {
@@ -31,6 +33,7 @@ class SignupTest extends TestCase
      * @dataProvider TestData::positiveTestDataOfUserDetailsTwo()
      * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoOne()
      * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoThree()
+     * @dataProvider ZapierTestData::positiveTestDataOfZapOne()
      */
     public function testEnteredIsString($data)
     {
@@ -63,6 +66,7 @@ class SignupTest extends TestCase
       * @dataProvider TestData::positiveTestDataOfUserDetailsOne()
       * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoTwo()
       * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoFour()
+      * @dataProvider ZapierTestData::positiveTestDataOfZapTwo()
       */
     public function testArrayKeyNotEmpty($data)
     {
@@ -78,6 +82,7 @@ class SignupTest extends TestCase
      /**
      * @dataProvider TestData::negativeTestDataOfUserDetailsThree()
      * @dataProvider TestDataForm2::negativeTestDataOfUserCardInfoThree()
+     * @dataProvider ZapierTestData::negativeTestDataofZapFive()
      */
     public function testAllAssociativeArrayDataIsEmpty($data)
     {
@@ -95,6 +100,7 @@ class SignupTest extends TestCase
       * @dataProvider TestData::positiveTestDataOfUserDetailsOne()
       * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoTwo()
       * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoFour()
+      * @dataProvider ZapierTestData::positiveTestDataOfZapTwo()
       */
     public function testArrayKeyIsString($data)
     {
