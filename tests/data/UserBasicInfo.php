@@ -54,11 +54,11 @@ class UserBasicInfo
         
         return
         [
-          'Postive test data set one'   => $datasetOne,
-          'Postive test data set two'   => $datasetTwo,
-          'Postive test data set three' => $datasetThree,
-          'Postive test data set four'  => $datasetFour,
-          'Postive test data set five'  => $datasetFive
+          'postive test data set one'   => $datasetOne,
+          'postive test data set two'   => $datasetTwo,
+          'postive test data set three' => $datasetThree,
+          'postive test data set four'  => $datasetFour,
+          'postive test data set five'  => $datasetFive
         ];
     }
      
@@ -113,11 +113,11 @@ class UserBasicInfo
       
         return
         [
-          'Negative test data set one'    => $datasetOne,
-          'Negative test data set two'    => $datasetTwo,
-          'Negative test  data set three' => $datasetThree,
-          'Negative test data set four'   => $datasetFour,
-          'Negative test data set five'   => $datasetFive
+          'negative test data set one'    => $datasetOne,
+          'negative test data set two'    => $datasetTwo,
+          'negative test  data set three' => $datasetThree,
+          'negative test data set four'   => $datasetFour,
+          'negative test data set five'   => $datasetFive
         ];
     }
      
@@ -164,10 +164,10 @@ class UserBasicInfo
       
       return
        [
-          'Negative test data set one'   => $datasetOne,
-          'Negative test data set two'   => $datasetTwo,
-          'Negative test data set three' => $datasetThree,
-          'Negative test data set four'  => $datasetFour
+          'negative test data set one'   => $datasetOne,
+          'negative test data set two'   => $datasetTwo,
+          'negative test data set three' => $datasetThree,
+          'negative test data set four'  => $datasetFour
       ];
     }
     
@@ -248,12 +248,12 @@ class UserBasicInfo
         
         return
         [
-          'Negative test data set one'   => $datasetOne,
-          'Negative test data set two'   => $datasetTwo,
-          'Negative test data set three' => $datasetThree,
-          'Negative test data set Four'  => $datasetFour,
-          'Negative test data set five'  => $datasetFive,
-          'Negative test data set six'   => $datasetSix
+          'negative test data set one'   => $datasetOne,
+          'negative test data set two'   => $datasetTwo,
+          'negative test data set three' => $datasetThree,
+          'negative test data set Four'  => $datasetFour,
+          'negative test data set five'  => $datasetFive,
+          'negative test data set six'   => $datasetSix
        ];
     }
    

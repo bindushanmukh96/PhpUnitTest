@@ -158,14 +158,16 @@ class ZapierData
     /**
      * negative Test Data in the form of Associative Array
      * Use Test Data to validate  the condition where one parameter is empty
+     * 
+     * @return Array
      */
         public function zapierDataWithSecondNegativeTestData()
         {
             return [
                 'negative Test Data set one' => [
                     [
-                      "firstName"   =>   "TestSample1",
-                      "lastName"    =>   "Data11",
+                      "firstName"   =>   "TestSample1$",
+                      "lastName"    =>   "Data11$",
                       "email"       =>   ""
                     ]
                 ],
@@ -173,14 +175,14 @@ class ZapierData
                     [
                       "firstName" =>  "TestSample2",
                       "lastName"  =>  "",
-                      "email"     =>  "TestSample2@mailbox.org"
+                      "email"     =>  "TestSample2@mailbox..org"
                     ]
                 ],
                 'negative Test Data set Three' => [
                     [
                       "firstName"  =>  "",
-                      "lastName"   =>  "SampleData3",
-                      "email"      =>  "SampleData3@gmail.com"
+                      "lastName"   =>  "Sample#Data3",
+                      "email"      =>  "SampleData3@gmail..com"
                     ]
                 ],
                 'negative Test data set Four' => [
@@ -211,6 +213,8 @@ class ZapierData
     /**
      * Negative Test Data where all parameters are empty
      * Use Test Data to validate the condition where all parameters are empty 
+     * 
+     * @return Array
      */
     public function zapierDataWithAllParametersEmpty()
     {
@@ -287,7 +291,7 @@ class ZapierData
     * Negative Test Data for email validation
     * use this test data for  email not valid assert condition
     */
-    public function zdataProviderWithInvalidName()
+    public function dataProviderWithInvalidEmail()
     {
         return 
         [

@@ -1,7 +1,7 @@
 <?php
-require 'data/TestData.php';
-require 'data/TestDataForm2.php';
-require 'data/ZapierTestData.php';
+require 'data/UserBasicInfo.php';
+require 'data/UserCreditCardInfo.php';
+require 'data/ZapierData.php';
 use PHPUnit\Framework\TestCase;
 
 // use function PHPUnit\Framework\assertContains;
@@ -9,64 +9,12 @@ use PHPUnit\Framework\TestCase;
 class SignupTest extends TestCase
 {
   
-  
-  
-  //  Positive assert test to check that string is not empty
-    /**
-     * @dataProvider TestData::positiveTestDataOfUserDetailsTwo()
-     * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoOne()
-     * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoThree()
-     * @dataProvider ZapierTestData::positiveTestDataOfZapOne()
-     */
-    public function testFieldsEnteredNotEmpty($data)
-    {
-      for($i=0;$i<count($data);$i++)
-      {
-        $this->assertNotEmpty($data[$i]);
-      }
-     }
-     
-     
-     
-    //Positive assert test to check that all  parameters are string 
-    /**
-     * @dataProvider TestData::positiveTestDataOfUserDetailsTwo()
-     * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoOne()
-     * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoThree()
-     * @dataProvider ZapierTestData::positiveTestDataOfZapOne()
-     */
-    public function testEnteredIsString($data)
-    {
-      for($i=0;$i<count($data);$i++)
-      {
-        $this->assertIsString($data[$i]);
-      }
-     }
-     
-     
-     
-     //Negative assert test to check that all parameters are not string 
-     /**
-     * @dataProvider TestDataForm2::NegativeTestDataOfUserCardInfoOne()
-     */
-    public function testArrayDataIsNotString($data)
-    {
-      for($i=0;$i<count($data);$i++)
-      {
-   
-      $this->assertIsNotString($data);
-      }
-
-    }
-    
-    
-    
-    //Positive assert test to check that key in array is not empty
+      //Positive assert test to check that key in array is not empty
       /**
-      * @dataProvider TestData::positiveTestDataOfUserDetailsOne()
-      * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoTwo()
-      * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoFour()
-      * @dataProvider ZapierTestData::positiveTestDataOfZapTwo()
+      * @dataProvider UserBasicInfo::userBasicInfoWithPositiveTestData()
+      * @dataProvider UserCreditCardInfo::userCreditCardInfoWithPositiveTestData()
+      * @dataProvider UserCreditCardInfo::usercreditCardInfoWithSecondPositiveTestData()
+      * @dataProvider ZapierData::zapierDataWithPositiveTestData()
       */
     public function testArrayKeyNotEmpty($data)
     {
@@ -76,13 +24,11 @@ class SignupTest extends TestCase
       }
     }
     
-    
-    
-    //Negative  assert test to check that all parameters are empty where data is associative array
+    //Negative  assert test to check that all parameters are empty 
      /**
-     * @dataProvider TestData::negativeTestDataOfUserDetailsThree()
-     * @dataProvider TestDataForm2::negativeTestDataOfUserCardInfoThree()
-     * @dataProvider ZapierTestData::negativeTestDataofZapFive()
+     * @dataProvider UserBasicInfo::userBasicInfoWithAllParametersEmpty()
+     * @dataProvider UserCreditCardInfo::userCreditCardInfoWithNegativeTestDataAllParametersEmpty()
+     * @dataProvider ZapierData::zapierDataWithAllParametersEmpty()
      */
     public function testAllAssociativeArrayDataIsEmpty($data)
     {
@@ -93,14 +39,14 @@ class SignupTest extends TestCase
 
     }
     
-    
-    
-    //Positive assert test to check that key in array is string 
+      //Positive assert test to check that key in array is string 
       /**
-      * @dataProvider TestData::positiveTestDataOfUserDetailsOne()
-      * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoTwo()
-      * @dataProvider TestDataForm2::positiveTestDataOfUserCardInfoFour()
-      * @dataProvider ZapierTestData::positiveTestDataOfZapTwo()
+      * @dataProvider UserBasicInfo::userBasicInfoWithPositiveTestData()
+      * @dataProvider UserCreditCardInfo::userCreditCardInfoWithSecondPositiveTestData()
+      * @dataProvider UserCreditCardInfo::userCreditCardInfoWithPositiveTestData()
+      * @dataProvider  UserCreditCardInfo::userCreditCardInfoWithThirdPositiveTestData()
+      * @dataProvider ZapierData::zapierDataWithPositiveTestData()
+      *@dataProvider ZapierData::zapierDataWithSecondPositiveTestData()
       */
     public function testArrayKeyIsString($data)
     {
@@ -110,11 +56,9 @@ class SignupTest extends TestCase
       }
     }
     
-    
-    
     //Negative  assert test to check that all parameters are not string where data is in form of Associative Array
      /**
-     * @dataProvider TestDataForm2::negativeTestDataOfUserCardInfoTwo()
+     * @dataProvider UserCreditCardInfo::userCreditCardInfoWithNegativeTestData()
      */
     public function testAllAssociativeArrayDataIsNotString($data)
     {
@@ -125,22 +69,18 @@ class SignupTest extends TestCase
       }
     }
     
-    
-    
     // Positive assert test to check that Name is String
     /**
-     * @dataProvider TestData::positiveTestDataForNameValidation()
+     * @dataProvider UserBasicInfo::dataProviderWithValidName()
      */
     public function testNameIsString($data)
     {
       $this->assertIsString($data);
     }
     
-    
-    
     // Negative assert test to check that Name is not  empty 
     /**
-     * @dataProvider TestData::positiveTestDataForNameValidation()
+     * @dataProvider UserBasicInfo::dataProviderWithInvalidName()
      */
     public function testNameIsNotEmpty($data)
     {
@@ -148,11 +88,9 @@ class SignupTest extends TestCase
 
     }
     
-    
-    
     //Positive assert test to check that email is valid 
     /**
-     * @dataProvider TestData::positiveTestDataForEmailValidation()
+     * @dataProvider UserBasicInfo::dataProviderWithValidEmail()
      */
     public function testEmailIsValid($data)
     {
@@ -161,11 +99,9 @@ class SignupTest extends TestCase
 
     }
     
-    
-    
     //Negative assert test to check that email is  not valid 
      /**
-     * @dataProvider TestData::negativeTestDataForEmailValidation()
+     * @dataProvider TestData::UserBasicInfo::dataProviderWithInvalidEmail()
      */
     public function testEmailIsnotValid($data)
     {
@@ -174,11 +110,9 @@ class SignupTest extends TestCase
 
     }
     
-    
-    
     //Positive assert test to check that password is valid 
     /**
-     * @dataProvider TestData::positiveTestDataForPasswordValidation()
+     * @dataProvider UserBasicInfo::dataProviderWithValidPassword()
      */
     public function testPasswordIsValid($data)
     {
@@ -188,11 +122,9 @@ class SignupTest extends TestCase
 
     }
     
-    
-    
     //Negative assert test to check that password is not valid 
     /**
-     * @dataProvider TestData::negativeTestDataForPasswordValidation()
+     * @dataProvider UserBasicInfo::dataProviderWithInvalidName()
      */
     public function testPasswordIsNotValid($data)
     {
@@ -203,11 +135,9 @@ class SignupTest extends TestCase
 
     }
     
-    
-    
     //Positive assert test to check that MobileNumber is valid 
     /**
-     * @dataProvider TestDataForm2::positiveTestDataForMobileNumberValidation()
+     * @dataProvider UserCreditCardInfo::dataProviderWithValidMobileNumber()
      */
     public function testMobileNumberIsValid($data)
     {
@@ -217,11 +147,9 @@ class SignupTest extends TestCase
 
     }
     
-    
-    
     //Negative assert test to check that MobileNumber is not valid 
     /**
-     * @dataProvider TestDataForm2::negativeTestDataForMobileNumberValidation()
+     * @dataProvider UserCreditCardInfo::dataProviderWithInvalidMobileNumber()
      */
     public function testMobileNumberIsnotValid($data)
     {
@@ -231,11 +159,9 @@ class SignupTest extends TestCase
 
     }
     
-    
-    
     //Positive assert test to check that Credit Card is  valid 
     /**
-     * @dataProvider TestDataForm2::positiveTestDataForCreditCardValidation()
+     * @dataProvider UserCreditCardInfo::dataProviderWithValidCreditCard()
      */
     public function testCreditCardIsValid($data)
     {
@@ -245,11 +171,9 @@ class SignupTest extends TestCase
 
     }
     
-    
-    
     //Negative assert test to check that Credit Card is not  valid 
     /**
-     * @dataProvider TestDataForm2::negativeTestDataForCreditCardValidation()
+     * @dataProvider UserCreditCardInfo::dataProviderWithInvalidCreditCard()
      */
     public function testCreditCardIsNotValid($data)
     {
@@ -258,17 +182,4 @@ class SignupTest extends TestCase
       $this->assertDoesNotMatchRegularExpression($pattern,$data);
 
     }
-
-
-
-
-
-
-
-
-
-   
-  
-
-
-}
+  }
