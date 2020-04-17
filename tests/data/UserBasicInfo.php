@@ -192,15 +192,15 @@ class UserBasicInfo
      * 
      * @return Array
      */
-    public function negativeTestDataOfUserDetailsThree()
+    public function userBasicInfoWithAllParametersEmpty()
     {
       return [
-         [
+         [[
                     "firstName"     =>     "",
                     "lastName"      =>     "", 
                     "email"         =>     "",
                     "password"      =>     ""
-          ]
+          ]]
         ];
    }
    
@@ -211,7 +211,7 @@ class UserBasicInfo
      * 
      * @returns Array
      */
-    public function UserBasicInfoWithParamtersEmpty()
+    public function userBasicInfoWithParamtersEmpty()
     {  
         $datasetOne = [
           [
@@ -285,7 +285,7 @@ class UserBasicInfo
     *
     *@returns Array
     */
-    public function userBasicInfoPositiveNameValidation()
+    public function userBasicInfoWithPositiveTestDataOfNameValidation()
     {
     return
     [
@@ -312,7 +312,7 @@ class UserBasicInfo
  * 
  * @returns Array
  */
-public function userBasicInfoNegativeNameValidation()
+public function userBasicInfoWithNegativeTestDataOfNameValidation()
 {
   return
   [
@@ -337,7 +337,7 @@ public function userBasicInfoNegativeNameValidation()
  * 
  * @returns Array
  */
-public function positiveTestDataForEmailValidation()
+public function userBasicInfoWithPositiveTestDataOfEmailValidation()
 {
   return
   [
@@ -363,7 +363,7 @@ public function positiveTestDataForEmailValidation()
  * 
  * @returns Array
  */
-public function negativeTestDataForEmailValidation()
+public function userBasicInfoWithNegativeTestDataOfEmailValidation()
 {
   return
   [
@@ -389,7 +389,7 @@ public function negativeTestDataForEmailValidation()
  * 
  * @returns Array
  */
-public function positiveTestDataForPasswordValidation()
+public function userBasicInfoWithPositiveTestDataOfPasswordValidation()
 {
   return
     [
@@ -409,7 +409,7 @@ public function positiveTestDataForPasswordValidation()
  * 
  * @return Array
  */
-public function negativeTestDataForPasswordValidation()
+public function userBasicInfoWithNegativeTestDataOfPasswordValidation()
 {
   return
   [

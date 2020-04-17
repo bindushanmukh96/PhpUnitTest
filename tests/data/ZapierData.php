@@ -1,6 +1,6 @@
 <?php
 
-class ZapierTestData
+class ZapierData
 {
 
     /**
@@ -10,10 +10,9 @@ class ZapierTestData
      * 
      * @return Array 
      */
-    public function positiveTestDataOfZapTwo()
+    public function zapierDataWithPositiveTestData()
     {
-        return
-        [
+        return [
             'positive Test Data set one' => [
                 [
                         "firstName"   =>   "Test11Data1",
@@ -51,9 +50,69 @@ class ZapierTestData
                 [
                         "firstName"   => "test7sample",
                         "lastName"    =>  "data4",
-                        "email"       =>  "testdat7a@mailbox.org",
+                        "email"       =>  "testdat7a@mailbox.org"
                 ]
             ]
+        ];
+    }
+
+
+    /**
+     * Positive Test Data where parameters are not empty and valid
+     * Use test Data in validating whether all parameters are valid
+     * Use Test Data to check all parameters are not empty
+     * 
+     * @return Array 
+     */
+    public function zapierDataWithSecondPositiveTestData()
+    {
+            $datasetOne = [
+                [
+                        "firstName"   =>   "Test1data19",
+                        "lastName"    =>   "Sample23",
+                        "email"       =>   "test24Data1Sample11@gmail.com"
+                ]
+            ];
+
+            $datasetTwo = [
+                [
+                        "firstName"    =>   "Test72",
+                        "lastName"     =>   "Sample62",
+                        "email"        =>   "test92Data2Sample@yahoo.com"
+                ]
+            ];
+
+            $datasetThree = [
+                [
+                        "firstName"   =>   "Test33Data3",
+                        "lastName"    =>   "Sample3",
+                        "email"       =>   "test33Data2@hotmail.co.in"
+                ]
+            ];
+
+            $datasetFour = [
+                [
+                        "firstName"   =>   "test1sample1",
+                        "lastName"    =>   "data9",
+                        "email"       =>   "testdata3sample3@hotmail.com"
+                ]
+            ];
+
+            $datasetFive = [
+                [
+                        "firstName"   => "test7sample",
+                        "lastName"    =>  "data4",
+                        "email"       =>  "testdat7a@mailbox.org"
+                ]
+            ];
+            return 
+            [
+                'positive test data set one'   =>   $datasetOne,
+                'positive test data set two'   =>   $datasetTwo,
+                'positive test data set three' =>   $datasetThree,
+                'positive test data set four'  =>   $datasetFour,
+                'positive test data set five'  =>   $datasetFive
+
         ];
     }
 
@@ -64,10 +123,9 @@ class ZapierTestData
      * 
      * @return Array 
      */
-    public function NegativeTestDataOfZapOne()
+    public function zapierDataWithNegativeTestData()
     {
-        return
-        [
+        return [
             'Negative Test Data set one' => [
                 [
                         "firstName"   =>   "Test11Data1^%",
@@ -114,10 +172,9 @@ class ZapierTestData
      * negative Test Data in the form of Associative Array
      * Use Test Data to validate  the condition where one parameter is empty
      */
-        public function negativeTestDataofZapTwo()
+        public function zapierDataWithSecondNegativeTestData()
         {
-            return
-            [
+            return [
                 'Negative Test Data set one' => [
                     [
                             "firstName"   =>   "TestSample1",
@@ -175,15 +232,14 @@ class ZapierTestData
      * Negative Test Data where all parameters are empty
      * Use Test Data to validate the condition where all parameters are empty 
      */
-        public function negativeTestDataofZapThree()
+        public function zapierDataWithAllParametersEmpty()
         {
-            return
-            [
-               [
+            return [
+               [[
                     "firstName"  =>  "",
                     "lastName"   =>  "",
                     "email"      =>  ""
-                ]
+                ]]
             ];
         }
 
@@ -194,20 +250,19 @@ class ZapierTestData
  * Positive Test Data for FirstName and LastName validation
  * use this test data for  FirstName and LastName validating assert condition
  */
-public function positiveTestDataForNameValidation()
+public function zapierDataWithPositiveNameValidation()
 {
-  return
-  [
-    'positve test data one'   =>  "Test467",
-    'positve test data two'   =>  "Sample1",
-    'positve test data three' =>  "testsample4",
-    'positve test data four'  =>  "Test66sample",
-    'positve test data five'  =>  "testingSample7",
-    'positve test data six'   =>  "TestSample",
-    'positve test data seven' =>  "Sample2Testing",
-    'positve test data eight' =>  "Sample3test",
-    'positve test data nine'  =>  "testsample66",
-    'positve test data ten'  =>   "Test1Sample398"
+  return [
+    'positve test data one'   =>  ["Test467"],
+    'positve test data two'   =>  ["Sample1"],
+    'positve test data three' =>  ["testsample4"],
+    'positve test data four'  =>  ["Test66sample"],
+    'positve test data five'  =>  ["testingSample7"],
+    'positve test data six'   =>  ["TestSample"],
+    'positve test data seven' =>  ["Sample2Testing"],
+    'positve test data eight' =>  ["Sample3test"],
+    'positve test data nine'  =>  ["testsample66"],
+    'positve test data ten'  =>   ["Test1Sample398"]
   ];
 
 }
@@ -219,18 +274,17 @@ public function positiveTestDataForNameValidation()
  * Negative Test Data for FirstName and LastName validation
  * use this test data for  FirstName and LastName not valid assert condition
  */
-public function negativeTestDataForNameValidation()
+public function zapierDataWithNegativeTestDataOfNameValidation()
 {
-  return
-  [
+  return [
   
-  'negative test data one'   =>  "12345678945-6786%8",
-  'negative test data two'   =>  "testing.Sample_!@#%",
-  'negative test data three' =>  "!@#$%^&**",
-  'negative test data four'  =>  "GT%&*976123829253256",
-  'negative test data five'  =>  "^%(ERTYUIOSdfghgshkshiweyowhsjkbxl",
-  'negative test data six'   =>  "dfghjklzxcvbnertyuixcvbertyu(^#",
-  'negative test data seven' =>  "12345678@34*945678",
+  'negative test data one'   =>  ["12345678945-6786%8"],
+  'negative test data two'   =>  ["testing.Sample_!@#%"],
+  'negative test data three' =>  ["!@#$%^&**"],
+  'negative test data four'  =>  ["GT%&*976123829253256"],
+  'negative test data five'  =>  ["^%(ERTYUIOSdfghgshkshiweyowhsjkbxl"],
+  'negative test data six'   =>  ["dfghjklzxcvbnertyuixcvbertyu(^#"],
+  'negative test data seven' =>  ["12345678@34*945678"],
 
   ];
 
@@ -242,20 +296,19 @@ public function negativeTestDataForNameValidation()
  * Positive Test Data for email validation
  * use this test data for  email validating assert condition
  */
-public function positiveTestDataForEmailValidation()
+public function zapierDataWithPositiveTestDataOfEmailValidation()
 {
-  return
-  [
-    'positve test data one'   =>  "_test_sample_H@gmail.com",
-    'positve test data two'   =>  "_test-967.sample@hotmail.co.in",
-    'positve test data three' =>  "_TEST-SAMPLE_44@OUTLOOK.COM",
-    'positve test data four'  =>  "testSamples1._test@hij.com",
-    'positve test data five'  =>  "TeST-62.sample.sample@g-maili.com",
-    'positve test data six'   =>  "TestSample4-0i2-iu@mail.org",
-    'positve test data seven' =>  "sample_test.E@h-mail.co.in",
-    'positve test data eight' =>  "Sample_test23.example@yop-mail.com",
-    'positve test data nine'  =>  "testsample66-960--n@pmail.org",
-    'positve test data ten'   =>  "Test1_Sample3-98_test@yahoo.org"
+  return [
+    'positve test data one'   =>  ["_test_sample_H@gmail.com"],
+    'positve test data two'   =>  ["_test-967.sample@hotmail.co.in"],
+    'positve test data three' =>  ["_TEST-SAMPLE_44@OUTLOOK.COM"],
+    'positve test data four'  =>  ["testSamples1._test@hij.com"],
+    'positve test data five'  =>  ["TeST-62.sample.sample@g-maili.com"],
+    'positve test data six'   =>  ["TestSample4-0i2-iu@mail.org"],
+    'positve test data seven' =>  ["sample_test.E@h-mail.co.in"],
+    'positve test data eight' =>  ["Sample_test23.example@yop-mail.com"],
+    'positve test data nine'  =>  ["testsample66-960--n@pmail.org"],
+    'positve test data ten'   =>  ["Test1_Sample3-98_test@yahoo.org"]
   ];
 
 }
@@ -267,20 +320,19 @@ public function positiveTestDataForEmailValidation()
  * Negative Test Data for email validation
  * use this test data for  email not valid assert condition
  */
-public function negativeTestDataForEmailValidation()
+public function zapierDataWithNegativeTestDataOfEmailValidation()
 {
-  return
-  [
-  'negative test data one'   =>  "TestSample_a@@.com",
-  'negative test data two'   =>  "testingsample h@.yahhoo.com",
-  'negative test data three' =>  ".testingsample66@hotmail.com",
-  'negative test data four'  =>  "testingsample..@mail.org",
-  'negative test data five'  =>  ".sampletesting-998.jn@.co.in",
-  'negative test data six'   =>  "sampleTEST_example..-@yp_mail.com",
-  'negative test data seven' =>  "SampleTest67_02ih@@yopmail.com1233",
-  'negative test data eight' =>  "sampletest7.2test@..org",
-  'negative test data nine'  =>  "sampletest55..606tst@hotmail.org",
-  'negative test data ten'   =>  "Sample.442test@_pmail..org",
+  return [
+  'negative test data one'   =>  ["TestSample_a@@.com"],
+  'negative test data two'   =>  ["testingsample h@.yahhoo.com"],
+  'negative test data three' =>  [".testingsample66@hotmail.com"],
+  'negative test data four'  =>  ["testingsample..@mail.org"],
+  'negative test data five'  =>  [".sampletesting-998.jn@.co.in"],
+  'negative test data six'   =>  ["sampleTEST_example..-@yp_mail.com"],
+  'negative test data seven' =>  ["SampleTest67_02ih@@yopmail.com1233"],
+  'negative test data eight' =>  ["sampletest7.2test@..org"],
+  'negative test data nine'  =>  ["sampletest55..606tst@hotmail.org"],
+  'negative test data ten'   =>  ["Sample.442test@_pmail..org"],
   ];
 
 }

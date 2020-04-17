@@ -14,8 +14,7 @@ class CreditCardInfo
      */
     public function creditCardInfoWithPositiveTestData()
     {
-      return
-      [
+      return [
         'positive test data set one' => [
           [
                   "mobileNumber"     =>     "   (898)-567809",
@@ -54,6 +53,65 @@ class CreditCardInfo
       ]
       ];
     }
+
+    /**
+     * Positive test Data  where all parameters are not empty and Valid
+     * Use this data for validating assert condition to check all parameters are not empty
+     * Use this data for validating assert condition to check all parameters are valid
+     * 
+     * @return Array
+     */
+    public function creditCardInfoWithSecondPositiveTestData()
+    {
+       $datasetOne = [
+          [
+                  "mobileNumber"     =>     "   (898)-567809",
+                  "creditCard"       =>     "    3097186382167369",
+                  "cvv"              =>     "   846"
+
+        ]
+      ];
+        $datasetTwo = [
+          [
+                  "mobileNumber"     =>     "(741)-617749     ",
+                  "creditCard"       =>     "4912306179265296   ",
+                  "cvv"              =>     "730    "
+        ]
+      ];
+        $datasetThree = [
+          [
+                  "mobileNumber"     =>     "    (517)-020409",
+                  "creditCard"       =>     "      8201739442968164",
+                  "cvv"              =>     "   385"
+        ]
+      ];
+        $datasetFour = [
+          [
+                 "mobileNumber"      =>      "    (518)-832641    ",
+                 "creditCard"        =>      "   7290701927946190    ",
+                 "cvv"               =>      "    861    "
+        ]
+      ];
+        $datasetFive = [
+          [
+                  "MobileNumber"      =>      "   (293)-382272   ",
+                  "CreditCard"        =>      "   7629274035292648   ",
+                  "Cvv"               =>      "   472   "
+        ]
+          ];
+
+          return
+          [
+            'positive test data set one'   =>  $datasetOne,
+            'positive test data set two'   =>  $datasetTwo,
+            'positive test data set three' =>  $datasetThree,
+            'positive test data set Four'  =>  $datasetFour,
+            'positive test data set Five'  =>  $datasetFive
+
+
+          ];
+      
+    }
     
     
     /**
@@ -63,7 +121,7 @@ class CreditCardInfo
      * 
      * @return Array
      */
-    public function creditCardInfoWithSecondPositiveTestData()
+    public function creditCardInfoWithThirdPositiveTestData()
     {
       $datasetOne = [
         [
@@ -120,8 +178,7 @@ class CreditCardInfo
      */
     public function creditCardInfoWithNegativeTestData()
     {
-      return
-      [
+      return [
         'negative test data set one' => [
           [
                   "mobileNumber"    =>    (738)-737383,
@@ -166,13 +223,12 @@ class CreditCardInfo
      */
     public function creditCardInfoWithNegativeTestDataAllParametersEmpty()
     {
-      return
-      [
-        [
-           "mobileNumber"  =>  "",
+      return [
+        [[
+          "mobileNumber"   =>  "",
           "creditCard"     =>  "",
           "cvv"            =>  ""
-        ]
+        ]]
     ];
     }
     
@@ -182,8 +238,7 @@ class CreditCardInfo
      */
     public function creditCardInfoWithNegativeTestDataWithEmptyParameters()
     {
-      return
-      [
+      return [
         'negative test data set one' => [
           [
                     "mobileNumber"   =>   "      (04)39738827",
@@ -244,8 +299,7 @@ class CreditCardInfo
      */
     public function creditCardInfoWithNegativeTestWithInvalidData()
     {
-      return
-      [
+      return [
         'negative test data set one' => [
           [
                   "mobileNumber"    =>    "(738)-737383yf",
