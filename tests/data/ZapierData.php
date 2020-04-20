@@ -7,7 +7,7 @@ class ZapierData
      * Use test Data in validating whether all parameters are valid
      * Use Test Data to check all parameters are not empty
      * 
-     * @return Array 
+     * @return array 
      */
     public function zapierDataWithPositiveTestData()
     {
@@ -55,7 +55,7 @@ class ZapierData
      * Use test Data in validating whether all parameters are valid
      * Use Test Data to check all parameters are not empty
      * 
-     * @return Array 
+     * @return array 
      */
     public function zapierDataWithSecondPositiveTestData()
     {
@@ -111,7 +111,7 @@ class ZapierData
      * Negative Test Data where parameters are not valid
      * Use test Data in validating whether all parameters are valid
      * 
-     * @return Array 
+     * @return array 
      */
     public function zapierDataWithNegativeTestData()
     {
@@ -159,7 +159,7 @@ class ZapierData
      * negative Test Data in the form of Associative Array
      * Use Test Data to validate  the condition where one parameter is empty
      * 
-     * @return Array
+     * @return array
      */
         public function zapierDataWithSecondNegativeTestData()
         {
@@ -214,7 +214,7 @@ class ZapierData
      * Negative Test Data where all parameters are empty
      * Use Test Data to validate the condition where all parameters are empty 
      * 
-     * @return Array
+     * @return array
      */
     public function zapierDataWithAllParametersEmpty()
     {
@@ -230,6 +230,8 @@ class ZapierData
     /**
     * Positive Test Data for FirstName and LastName validation
     * use this test data for  FirstName and LastName validating assert condition
+    *
+    *@return array
     */
     public function dataProviderWithValidName()
     {
@@ -251,6 +253,8 @@ class ZapierData
     /**
     * Negative Test Data for FirstName and LastName validation
     * use this test data for  FirstName and LastName not valid assert condition
+    *
+    *@return array
     */
     public function dataProviderWithInvalidName()
     {
@@ -269,6 +273,8 @@ class ZapierData
     /**
     * Positive Test Data for email validation
     * use this test data for  email validating assert condition
+    *
+    *@return array
     */
     public function dataProviderWithValidEmail()
     {
@@ -290,6 +296,8 @@ class ZapierData
     /**
     * Negative Test Data for email validation
     * use this test data for  email not valid assert condition
+    *
+    *@return array
     */
     public function dataProviderWithInvalidEmail()
     {

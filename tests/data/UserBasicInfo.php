@@ -7,7 +7,7 @@ class UserBasicInfo
      * Use this data for validating assert condition to check all parameters are not empty
      * Use this data for validating assert condition to check all parameters are valid
      * 
-     * @returns array
+     * @return array
      */
     public function userBasicInfoWithPositiveTestData()
     {
@@ -66,7 +66,7 @@ class UserBasicInfo
      * Negative test Data where all parameters are not empty and not valid
      * Use this data for validating assert condition to check where one parameter are not empty
      * 
-     * @returns Array
+     * @return array
      */ 
     public function userBasicInfoWithNegativeTestData()
     {
@@ -125,7 +125,7 @@ class UserBasicInfo
      * Negative test Data where one parameter is not empty 
      * Use this data for validating assert condition to check all parameters are not empty
      * 
-     * @returns Array
+     * @return array
      */
     public function userBasicInfoNegativeTestDataWithOneParamter()
     {
@@ -175,7 +175,7 @@ class UserBasicInfo
      * Negative test Data in the form of associative array where all parameters are empty 
      * Use this data for validating assert condition to check all parameters are  empty
      * 
-     * @return Array
+     * @return array
      */
     public function userBasicInfoWithAllParametersEmpty()
     {
@@ -193,7 +193,7 @@ class UserBasicInfo
      * Negative test Data  where only two  parameters are not  empty 
      * Use this data for validating assert condition where only two  parameters are not   empty
      * 
-     * @returns Array
+     * @return array
      */
     public function userBasicInfoWithParamtersEmpty()
     {  
@@ -261,7 +261,7 @@ class UserBasicInfo
     * Positive Test Data for fname and lname validation
     * use this test data for  fname and lname validating assert condition
     *
-    *@returns Array
+    *@return array
     */
     public function dataProviderWithValidName()
     {
@@ -284,7 +284,7 @@ class UserBasicInfo
    * Negative Test Data for fname and lname validation
    * use this test data for  fname and lname not valid assert condition
    * 
-   * @returns Array
+   * @return array
    */
   public function dataProviderWithInvalidName()
   {
@@ -304,7 +304,7 @@ class UserBasicInfo
   * Positive Test Data for email validation
   * use this test data for  email validating assert condition
   * 
-  * @returns Array
+  * @return array
   */
   public function dataProviderWithValidEmail()
   {
@@ -327,7 +327,7 @@ class UserBasicInfo
   * Negative Test Data for email validation
   * use this test data for  email not valid assert condition
   * 
-  * @returns Array
+  * @return array
   */
   public function dataProviderWithInvalidEmail()
   {
@@ -350,7 +350,7 @@ class UserBasicInfo
   * Positive Test Data for password validation
   * use this test data for  password validating assert condition
   * 
-  * @returns Array
+  * @return array
   */
   public function dataProviderWithValidPassword()
   {
@@ -368,7 +368,7 @@ class UserBasicInfo
    * Negative Test Data for password validation
    * use this test data for  password validating assert condition
    * 
-   * @return Array
+   * @return array
    */
   public function dataProviderWithInvalidPassword()
   {

@@ -7,7 +7,7 @@ class UserCreditCardInfo
      * Use this data for validating assert condition to check all parameters are not empty
      * Use this data for validating assert condition to check all parameters are valid
      * 
-     * @return Array
+     * @return array
      */
     public function userCreditCardInfoWithPositiveTestData()
     {
@@ -56,7 +56,7 @@ class UserCreditCardInfo
      * Use this data for validating assert condition to check all parameters are not empty
      * Use this data for validating assert condition to check all parameters are valid
      * 
-     * @return Array
+     * @return array
      */
     public function userCreditCardInfoWithSecondPositiveTestData()
     {
@@ -96,14 +96,14 @@ class UserCreditCardInfo
           ]
         ];
 
-          return
-          [
-            'positive test data set one'   =>  $datasetOne,
-            'positive test data set two'   =>  $datasetTwo,
-            'positive test data set three' =>  $datasetThree,
-            'positive test data set Four'  =>  $datasetFour,
-            'positive test data set Five'  =>  $datasetFive
-          ];
+        return
+        [
+          'positive test data set one'   =>  $datasetOne,
+          'positive test data set two'   =>  $datasetTwo,
+          'positive test data set three' =>  $datasetThree,
+          'positive test data set Four'  =>  $datasetFour,
+          'positive test data set Five'  =>  $datasetFive
+        ];
     }
     
     
@@ -112,7 +112,7 @@ class UserCreditCardInfo
      * Use this data for validating assert condition to check all parameters are not empty
      * Use this data for validating assert condition to check all parameters are valid
      * 
-     * @return Array
+     * @return array
      */
     public function userCreditCardInfoWithThirdPositiveTestData()
     {
@@ -167,7 +167,7 @@ class UserCreditCardInfo
      * Negative test Data where all parameters are not valid values
      * Use this data for validating assert condition to check all parameters are valid
      * 
-     * @return Array
+     * @return array
      */
     public function userCreditCardInfoWithNegativeTestData()
     {
@@ -214,6 +214,8 @@ class UserCreditCardInfo
     /**
      * Negative test Data where all parameters are empty
      * Use this data for validating assert condition to check all parameters are string
+     * 
+     * @return array
      */
     public function userCreditCardInfoWithNegativeTestDataAllParametersEmpty()
     {
@@ -229,6 +231,8 @@ class UserCreditCardInfo
     /**
      * negative test Data where atleast one parameter is empty 
      * Use this data for validating assert condition to check atleast one parameter is empty
+     * 
+     * @return array
      */
     public function userCreditCardInfoWithNegativeTestDataWithEmptyParameters()
     {
@@ -290,7 +294,7 @@ class UserCreditCardInfo
      * Negative test Data where all parameters values are not valid
      * Use this data for validating assert condition to check all parameters are valid
      * 
-     * @return Array
+     * @return array
      */
     public function userCreditCardInfoWithNegativeTestWithInvalidData()
     {
@@ -337,6 +341,8 @@ class UserCreditCardInfo
      /**
      * Positive Test Data for Mobile Number validation
      * use this test data for  Mobile Number validating assert condition
+     * 
+     * @return array
      */
     public function dataProviderWithValidMobileNumber()
     {
@@ -358,6 +364,8 @@ class UserCreditCardInfo
      /**
      * Negative Test Data for mobile number validation
      * use this test data for  mobile number not valid assert condition
+     * 
+     * @return array
      */
     public function dataProviderWithInvalidMobileNumber()
     {
@@ -379,6 +387,8 @@ class UserCreditCardInfo
      /**
      * Positive Test Data for Credit card validation
      * use this test data for  Credit card validating assert condition
+     * 
+     * @return array
      */
     public function dataProviderWithValidCreditCard()
     {
@@ -400,6 +410,8 @@ class UserCreditCardInfo
      /**
      * Negative Test Data for Credit Card validation
      * use this test data for  Credit Card not valid assert condition
+     * 
+     * @return array
      */
      public function dataProviderWithInvalidCreditCard()
      {
