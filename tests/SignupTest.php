@@ -2,6 +2,7 @@
 require 'data/UserBasicInfo.php';
 require 'data/UserCreditCardInfo.php';
 require 'data/ZapierData.php';
+require 'data/RecurlyMockInfo.php';
 use PHPUnit\Framework\TestCase;
 
 // use function PHPUnit\Framework\assertContains;
@@ -15,6 +16,8 @@ class SignupTest extends TestCase
       * @dataProvider UserCreditCardInfo::userCreditCardInfoWithPositiveTestData()
       * @dataProvider UserCreditCardInfo::usercreditCardInfoWithSecondPositiveTestData()
       * @dataProvider ZapierData::zapierDataWithPositiveTestData()
+      * @dataProvider RecurlyMockInfo::recurlyMockInfoWithPositiveTestData()
+      * @dataProvider RecurlyMockInfo::recurlyMockInfoWithSecondPositiveTestData()
       */
     public function testArrayKeyNotEmpty($data)
     {
@@ -29,6 +32,7 @@ class SignupTest extends TestCase
      * @dataProvider UserBasicInfo::userBasicInfoWithAllParametersEmpty()
      * @dataProvider UserCreditCardInfo::userCreditCardInfoWithNegativeTestDataAllParametersEmpty()
      * @dataProvider ZapierData::zapierDataWithAllParametersEmpty()
+     * @dataProvider RecurlyMockInfo::recurlyMockInfoWithNegativeTestDataAllParamtersEmpty()
      */
     public function testAllAssociativeArrayDataIsEmpty($data)
     {
@@ -46,7 +50,9 @@ class SignupTest extends TestCase
       * @dataProvider UserCreditCardInfo::userCreditCardInfoWithPositiveTestData()
       * @dataProvider  UserCreditCardInfo::userCreditCardInfoWithThirdPositiveTestData()
       * @dataProvider ZapierData::zapierDataWithPositiveTestData()
-      *@dataProvider ZapierData::zapierDataWithSecondPositiveTestData()
+      * @dataProvider ZapierData::zapierDataWithSecondPositiveTestData()
+      * @dataProvider RecurlyMockInfo::recurlyMockInfoWithPositiveTestData()
+      * @dataProvider RecurlyMockInfo::recurlyMockInfoWithSecondPositiveTestData()
       */
     public function testArrayKeyIsString($data)
     {
