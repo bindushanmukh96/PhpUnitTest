@@ -22,7 +22,7 @@ class jsontesting extends TestCase
     
     // public function testJsonFile()
     // {
-    //     $path1='D:\xampp\htdocs\phpTest\tests\data\RecurlyMockJsonDataFive.json';
+    //     $path1= file_get_contents('D:\xampp\htdocs\phpTest\tests\data\RecurlyMockJsonDataFive.json');
     //     $this.assertJsonFileEqualsJsonFile($path1,$path1);
     // }
 
