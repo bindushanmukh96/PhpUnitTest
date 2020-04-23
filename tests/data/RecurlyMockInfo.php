@@ -18,7 +18,7 @@ class RecurlyMockInfo
               [
                 "firstName"     =>  "testSample",
                 "lastName"      =>  "sample1",
-                "email"         =>  "testsampleSample1.@gamil.com",
+                "email"         =>  "testsampleSample1@gamil.com",
                 "mobileNumber"  =>  "(021)-846937",
                 "creditCard"    =>  "9273649374936483",
                 "cvv"           =>  "234",
@@ -64,7 +64,8 @@ class RecurlyMockInfo
             "email"         =>  "TestSaample64@gmail.com",
             "mobileNumber"  =>  "(528)-916428",
             "creditCard"    =>  "9283462836258262",
-            "cvv"           =>  "821"
+            "cvv"           =>  "821",
+            "country"       =>  "Australia"
           ]
         ];
         $datasetTwo = [

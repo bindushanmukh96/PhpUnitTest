@@ -1,0 +1,18 @@
+<account>
+  <account_code>1</account_code>
+  <parent_account_code>2</parent_account_code>
+  <email>test_sample116@mailbox.co.in</email>
+  <first_name>testSample116</first_name>
+  <last_name>sample116</last_name>
+  <address>
+    <country>Australia</country>
+  </address>
+  <shipping_address>
+      <nickname>Work</nickname>
+      <first_name>testSample116</first_name>
+      <last_name>sample116</last_name>
+      <phone>(826)-639374</phone>
+     <email>test_sample116@mailbox.co.in</email>
+      <country>Australia</country>
+    </shipping_address>
+</account>

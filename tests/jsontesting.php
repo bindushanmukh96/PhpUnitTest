@@ -3,8 +3,9 @@
 require 'data/RecurlyMockInfo.php';
 use PHPUnit\Framework\TestCase;
 
-use function PHPUnit\Framework\assertJson;
+// use function PHPUnit\Framework\assertEquals;
 use function PHPUnit\Framework\assertJsonFileEqualsJsonFile;
+use function PHPUnit\Framework\assertJsonStringEqualsJsonString;
 
 class jsontesting extends TestCase
 {
@@ -18,15 +19,18 @@ class jsontesting extends TestCase
             json_encode($data)
         );
     }
+    
+    // public function testJsonFile()
+    // {
+    //     $path1='D:\xampp\htdocs\phpTest\tests\data\RecurlyMockJsonDataFive.json';
+    //     $this.assertJsonFileEqualsJsonFile($path1,$path1);
+    // }
 
-    /**
-     * 
-     */
-    public function testJson()
+    public function testJsonData()
     {
-        $path1='D:\xampp\htdocs\phpTest\tests\data\jsonexample1.txt';
-        $path2='D:\xampp\htdocs\phpTest\tests\data\jsonexample1.txt';
-        $this.assertJsonFileEqualsJsonFile($path2,$path1);
+        $dataOne = '{"data":"test"}';
+        $dataTwo = '{"data":"test"}';
+        $this->assertJsonStringEqualsJsonString($dataOne,$dataTwo);
     }
 }
 ?>

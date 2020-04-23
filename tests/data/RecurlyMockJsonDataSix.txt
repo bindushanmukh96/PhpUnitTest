@@ -1,0 +1,27 @@
+{
+	"account details": {
+		"account_code": "crc",
+		"parent_account_code": "CrcTest",
+		"bill_to": "self",
+		"email": "sample36@test_5@mailbox2.co.in",
+		"first_name": "Test84Sample",
+		"last_name": "Sample81",
+		"company_name": "",
+		"vat_number": "",
+		"tax_exempt": "",
+		"entity_use_code": "AHFD",
+		"account_acquisition": "cent",
+		"billing_info": "",
+		"cart_affiliate_id": "",
+		"shipping_address": "",
+		"accept_language": "",
+		"cc_emails": "",
+		"preferred_locale": "",
+		"transaction_type": "",
+		"state": "live",
+		"created_at": "2020-04-23T09:23:34.000Z",
+		"updated_at": "2020-04-23T09:23:34.000Z"
+
+
+	}
+}
