@@ -24,7 +24,8 @@ class jsontesting extends TestCase
     public function testJsonDataFile()
     {
         // $path1 = file_get_contents(__DIR__.'/data/RecurlyMockJsonDataFive.txt');
-        $path2 = (__DIR__.'/data/RecurlyMockJsonDataFive.txt');
+        $path2 = (__DIR__.'/data/RecurlyMockJsonDataFive.json');
+       
         $data='{
             "account details": {
                 "account_code": "crc",
@@ -56,10 +57,7 @@ class jsontesting extends TestCase
     //Positive assert to check the json data of two files
     public function testJsonFile()
     {
-        // $path1 = file_get_contents(__DIR__.'/data/RecurlyMockJsonDataFive.txt');
-       
-
-        $this->assertJsonFileEqualsJsonFile(__DIR__.'/data/RecurlyMockJsonDataFive.txt',__DIR__.'/data/RecurlyMockJsonDataFive.txt');
+        $this->assertJsonFileEqualsJsonFile(__DIR__.'/data/RecurlyMockJsonDataFive.json',__DIR__.'/data/RecurlyMockJsonDataFive.json');
     }
     
     //Positive assert to compare the json objects
@@ -94,7 +92,8 @@ class jsontesting extends TestCase
     public function testXmlStringFile()
     {
         $dataThree=(__DIR__.'/data/xmldata1.xml');
-        $data = '<account>
+        $data = '
+        <account>
         <account_code>1</account_code>
         <parent_account_code>1</parent_account_code>
         <email>testsampleSample1@gamil.com</email>
@@ -113,15 +112,50 @@ class jsontesting extends TestCase
             <email>testsampleSample1@gamil.com</email>
             <country>US</country>
           </shipping_address>
-      </account>';
+        </account>';
         $this->assertXmlStringEqualsXmlFile($dataThree,$data);
     }
 
     //postive assert to check the key in json object
     public function testJsonHasKey()
     {
-        $path2 = (file_get_contents(__DIR__.'/data/RecurlyMockJsonDataFive.txt'));
-        echo $path2;
-        echo gettype($path2);
+        $path3 = json_decode(file_get_contents(__DIR__.'/data/RecurlyMockJsonDataFive.json'),true);
+        $this->assertArrayHasKey('account_code',$path3['account details']);
+        $this->assertArrayHasKey('parent_account_code',$path3['account details']);
+        $this->assertArrayHasKey('first_name',$path3['account details']);
+        $this->assertArrayHasKey('last_name',$path3['account details']);
+        $this->assertArrayHasKey('email',$path3['account details']);
+        $this->assertArrayHasKey('state',$path3['account details']);
+        $this->assertArrayHasKey('created_at',$path3['account details']);
+    }
+
+    //positive assert to check the keys in xml object
+    public function testXmlHasKey()
+    {
+        $path = json_decode(json_encode(simplexml_load_string(file_get_contents(__DIR__.'/data/xmldata1.xml'))),true);
+        $this->assertArrayHasKey('account_code',$path);
+        $this->assertArrayHasKey('parent_account_code',$path);
+        $this->assertArrayHasKey('first_name',$path);
+        $this->assertArrayHasKey('last_name',$path);
+        $this->assertArrayHasKey('email',$path);
+    }
+
+    //positive assert to check the values in xml object
+    public function testXmlKeyIsString()
+    {
+        $path = json_decode(json_encode(simplexml_load_string(file_get_contents(__DIR__.'/data/xmldata1.xml'))),true);
+        $this->assertIsString($path['first_name']);
+        $this->assertIsString($path['last_name']);
+        $this->assertIsString($path['email']);
+        $this->assertIsString($path['phone']);
+    }
+
+    //positive assert to check the parameter is not empty
+    public function testXmlparamsNotEmpty()
+    {
+        $path = json_decode(json_encode(simplexml_load_string(file_get_contents(__DIR__.'/data/xmldata1.xml'))),true);
+        $this->assertNotEmpty($path['first_name']);
+        $this->assertNotEmpty($path['last_name']);
+        $this->assertNotEmpty($path['email']);
     }
 }

@@ -7,6 +7,7 @@
 		"first_name": "Test6Sample4",
 		"last_name": "test6",
 		"company_name": "",
+		"phone" : "(528)-916428",
 		"vat_number": "",
 		"tax_exempt": "",
 		"entity_use_code": "AHFD",
