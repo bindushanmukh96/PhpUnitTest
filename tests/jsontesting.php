@@ -26,7 +26,7 @@ class jsontesting extends TestCase
         // $path1 = file_get_contents(__DIR__.'/data/RecurlyMockJsonDataFive.txt');
         $path2 = (__DIR__.'/data/RecurlyMockJsonDataFive.json');
        
-        $data='{
+        $data= '{
             "account details": {
                 "account_code": "crc",
                 "parent_account_code": "CrcTest",
@@ -35,6 +35,7 @@ class jsontesting extends TestCase
                 "first_name": "Test7Sample6",
                 "last_name": "Sample76",
                 "company_name": "",
+                "phone": "(722)-815481",
                 "vat_number": "",
                 "tax_exempt": "",
                 "entity_use_code": "AHFD",
@@ -147,7 +148,6 @@ class jsontesting extends TestCase
         $this->assertIsString($path['first_name']);
         $this->assertIsString($path['last_name']);
         $this->assertIsString($path['email']);
-        $this->assertIsString($path['phone']);
     }
 
     //positive assert to check the parameter is not empty
