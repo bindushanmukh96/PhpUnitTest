@@ -1,6 +1,6 @@
 <account>
-  <account_code>1</account_code>
-  <parent_account_code>2</parent_account_code>
+  <account_code>2</account_code>
+  <parent_account_code>1</parent_account_code>
   <email>test_sample116@mailbox.co.in</email>
   <first_name>testSample116</first_name>
   <last_name>sample116</last_name>

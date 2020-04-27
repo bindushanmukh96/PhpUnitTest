@@ -12,7 +12,7 @@ class jsontesting extends TestCase
     /**
      * @dataProvider RecurlyMockInfo::recurlyMockInfoWithPositiveTestData()
      */
-    public function testJSONDta($data)
+    public function testRecurlyMockJsonData($data)
     {
         $this->assertJsonStringEqualsJsonString(
             json_encode($data),
@@ -21,7 +21,7 @@ class jsontesting extends TestCase
     }
     
     // positive assert to check the jsondata is present in file or not
-    public function testJsonDataFile()
+    public function testRecurlyMockJsonDataWithFile()
     {
         // $path1 = file_get_contents(__DIR__.'/data/RecurlyMockJsonDataFive.txt');
         $path2 = (__DIR__.'/data/RecurlyMockJsonDataFive.json');
@@ -56,43 +56,22 @@ class jsontesting extends TestCase
     }
     
     //Positive assert to check the json data of two files
-    public function testJsonFile()
+    public function testRecurlyMockJsonFiles()
     {
         $this->assertJsonFileEqualsJsonFile(__DIR__.'/data/RecurlyMockJsonDataFive.json',__DIR__.'/data/RecurlyMockJsonDataFive.json');
     }
     
-    //Positive assert to compare the json objects
-    public function testJsonData()
-    {
-        $dataOne = '{"data":"test"}';
-        $dataTwo = '{"data":"test"}';
-        $this->assertJsonStringEqualsJsonString($dataOne,$dataTwo);
-    }
-    
-    //positive assert to compare the two xml data
-    public function testXmlData()
-    {
-        $dataThree = '<name>TestXML</name>';
-        $this->assertXmlStringEqualsXmlString($dataThree,$dataThree);
-    }
-
     //positive assert to compare two xml files
-    public function testXmlFile()
+    public function testRecurlyMockXmlFiles()
     {
-        $path1 = __DIR__.'/data/xmldata1.xml';
+        $path1 = __DIR__.'/data/XmlDataOne.xml';
         $this->assertXmlFileEqualsXmlFile($path1,$path1);
     }
 
-    //positive assert to compare two json strings
-    public function testJsonString()
-    {
-        $this->assertJsonStringEqualsJsonString('{"name":"TestSample"}','{"name":"TestSample"}');
-    }
-    
     //positive assert to compare an xml string with xml file
     public function testXmlStringFile()
     {
-        $dataThree=(__DIR__.'/data/xmldata1.xml');
+        $dataThree=(__DIR__.'/data/XmlDataOne.xml');
         $data = '
         <account>
         <account_code>1</account_code>
@@ -117,45 +96,75 @@ class jsontesting extends TestCase
         $this->assertXmlStringEqualsXmlFile($dataThree,$data);
     }
 
-    //postive assert to check the key in json object
-    public function testJsonHasKey()
+    //postive assert to check the parameters in json object 
+    public function testRecurlyJsonDataHasParams()
     {
-        $path3 = json_decode(file_get_contents(__DIR__.'/data/RecurlyMockJsonDataFive.json'),true);
-        $this->assertArrayHasKey('account_code',$path3['account details']);
-        $this->assertArrayHasKey('parent_account_code',$path3['account details']);
-        $this->assertArrayHasKey('first_name',$path3['account details']);
-        $this->assertArrayHasKey('last_name',$path3['account details']);
-        $this->assertArrayHasKey('email',$path3['account details']);
-        $this->assertArrayHasKey('state',$path3['account details']);
-        $this->assertArrayHasKey('created_at',$path3['account details']);
+        $RecurlyDataset = json_decode(file_get_contents(__DIR__.'/data/RecurlyMockJsonDataFive.json'),true);
+        $this->assertArrayHasKey('account_code',$RecurlyDataset['account details']);
+        $this->assertArrayHasKey('parent_account_code',$RecurlyDataset['account details']);
+        $this->assertArrayHasKey('first_name',$RecurlyDataset['account details']);
+        $this->assertArrayHasKey('last_name',$RecurlyDataset['account details']);
+        $this->assertArrayHasKey('email',$RecurlyDataset['account details']);
+        $this->assertArrayHasKey('state',$RecurlyDataset['account details']);
+        $this->assertArrayHasKey('created_at',$RecurlyDataset['account details']);
+        $this->assertArrayHasKey('phone',$RecurlyDataset['account details']);
     }
 
-    //positive assert to check the keys in xml object
-    public function testXmlHasKey()
+    //positive assert to check the parameters is valid or not
+    public function testRecurlyJsonHasValidData()
     {
-        $path = json_decode(json_encode(simplexml_load_string(file_get_contents(__DIR__.'/data/xmldata1.xml'))),true);
-        $this->assertArrayHasKey('account_code',$path);
-        $this->assertArrayHasKey('parent_account_code',$path);
-        $this->assertArrayHasKey('first_name',$path);
-        $this->assertArrayHasKey('last_name',$path);
-        $this->assertArrayHasKey('email',$path);
+        $RecurlyDataset=json_decode(file_get_contents(__DIR__.'/data/RecurlyMockJsonDataFive.json'),true);
+        $this->assertIsString($RecurlyDataset['account details']['account_code']);
+        $this->assertIsString($RecurlyDataset['account details']['parent_account_code']);
+        $this->assertIsString($RecurlyDataset['account details']['first_name']);
+        $this->assertIsString($RecurlyDataset['account details']['last_name']);
+        $this->assertIsString($RecurlyDataset['account details']['email']);
+        $this->assertIsString($RecurlyDataset['account details']['state']);
+        $this->assertIsString($RecurlyDataset['account details']['created_at']);
+        $this->assertIsString($RecurlyDataset['account details']['phone']);
     }
 
-    //positive assert to check the values in xml object
-    public function testXmlKeyIsString()
+    //positive assert to check the parameters in xml object
+    public function testRecurlyXmlDataHasParams()
     {
-        $path = json_decode(json_encode(simplexml_load_string(file_get_contents(__DIR__.'/data/xmldata1.xml'))),true);
-        $this->assertIsString($path['first_name']);
-        $this->assertIsString($path['last_name']);
-        $this->assertIsString($path['email']);
+        $RecurlyDataset = json_decode(json_encode(simplexml_load_string(file_get_contents(__DIR__.'/data/XmlDataOne.xml'))),true);
+        $this->assertArrayHasKey('account_code',$RecurlyDataset);
+        $this->assertArrayHasKey('parent_account_code',$RecurlyDataset);
+        $this->assertArrayHasKey('first_name',$RecurlyDataset);
+        $this->assertArrayHasKey('last_name',$RecurlyDataset);
+        $this->assertArrayHasKey('email',$RecurlyDataset);
+        $this->assertArrayHasKey('phone',$RecurlyDataset['shipping_address']);
+    }
+
+    //positive assert to check the Parameters in xml object is valid or not
+    public function testRecurlyXmlHasValidData()
+    {
+        $RecurlyDataset = json_decode(json_encode(simplexml_load_string(file_get_contents(__DIR__.'/data/XmlDataOne.xml'))),true);
+        $this->assertIsString($RecurlyDataset['first_name']);
+        $this->assertIsString($RecurlyDataset['last_name']);
+        $this->assertIsString($RecurlyDataset['email']);
+        $this->assertIsString($RecurlyDataset['shipping_address']['phone']);
     }
 
     //positive assert to check the parameter is not empty
-    public function testXmlparamsNotEmpty()
+    public function testRecurlyXmlDataIsNotEmpty()
     {
-        $path = json_decode(json_encode(simplexml_load_string(file_get_contents(__DIR__.'/data/xmldata1.xml'))),true);
-        $this->assertNotEmpty($path['first_name']);
-        $this->assertNotEmpty($path['last_name']);
-        $this->assertNotEmpty($path['email']);
+        $RecurlyDataset = json_decode(json_encode(simplexml_load_string(file_get_contents(__DIR__.'/data/XmlDataOne.xml'))),true);
+        $this->assertNotEmpty($RecurlyDataset['first_name']);
+        $this->assertNotEmpty($RecurlyDataset['last_name']);
+        $this->assertNotEmpty($RecurlyDataset['email']);
+        $this->assertNotEmpty($RecurlyDataset['address']['country']);
+        $this->assertNotEmpty($RecurlyDataset['shipping_address']['phone']);
+        $this->assertNotEmpty($RecurlyDataset['shipping_address']['first_name']);
+        $this->assertNotEmpty($RecurlyDataset['shipping_address']['last_name']);
+    }
+
+    //positive assert to check the shipping data is valid
+    public function testRecurlyXmlShippingDataIsValid()
+    {
+        $RecurlyDataset = json_decode(json_encode(simplexml_load_string(file_get_contents(__DIR__.'/data/XmlDataOne.xml'))),true);
+        $this->assertEquals($RecurlyDataset['shipping_address']['first_name'],$RecurlyDataset['first_name']);
+        $this->assertEquals($RecurlyDataset['shipping_address']['last_name'],$RecurlyDataset['last_name']);
+        $this->assertEquals($RecurlyDataset['shipping_address']['email'],$RecurlyDataset['email']);
     }
 }
