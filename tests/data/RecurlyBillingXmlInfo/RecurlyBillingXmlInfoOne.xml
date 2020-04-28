@@ -1,0 +1,24 @@
+<account>
+  <account_code>1</account_code>
+  <parent_account_code>1</parent_account_code>
+  <email>testsampleSample1@gamil.com</email>
+  <first_name>testSample</first_name>
+  <last_name>sample1</last_name>
+  <preferred_locale>en-US</preferred_locale>
+  <address>
+    <country>US</country>
+  </address>
+   <year type="integer">2024</year>
+  <month type="integer">02</month>
+  <first_six>927364</first_six>
+  <last_four>6483</last_four>
+    <shipping_address>
+      <nickname>Work</nickname>
+      <first_name>testSample</first_name>
+      <last_name>sample1</last_name>
+      <company>CRC Inc</company>
+      <phone>(021)-846937</phone>
+      <email>testsampleSample1@gamil.com</email>
+      <country>US</country>
+    </shipping_address>
+</account>

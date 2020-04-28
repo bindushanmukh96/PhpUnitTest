@@ -1,0 +1,23 @@
+<account>
+  <account_code>4</account_code>
+  <parent_account_code>1</parent_account_code>
+  <email>TestSaample64@gmail.com</email>
+  <first_name>Test6Sample4</first_name>
+  <last_name>test6</last_name>
+  <address>
+    <country>Australia</country>
+  </address>
+   <year type="integer">2022</year>
+  <month type="integer">01</month>
+  <first_six>928346</first_six>
+  <last_four>8262</last_four>
+    <shipping_address>
+      <nickname>Work</nickname>
+      <first_name>Test6Sample4</first_name>
+      <last_name>test6</last_name>
+      <company>CRC Inc</company>
+      <phone>(528)-916428</phone>
+      <email>TestSaample64@gmail.com</email>
+      <country>Australia</country>
+    </shipping_address>
+</account>

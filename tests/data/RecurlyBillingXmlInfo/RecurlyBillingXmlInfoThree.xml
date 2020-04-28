@@ -1,0 +1,22 @@
+<account>
+  <account_code>3</account_code>
+  <parent_account_code>1</parent_account_code>
+  <email>sampletest11@gmail.com</email>
+  <first_name>Sampletest11</first_name>
+  <last_name>test1</last_name>
+  <address>
+    <country>NewZealand</country>
+  </address>
+   <year type="integer">2022</year>
+  <month type="integer">06</month>
+  <first_six>917254</first_six>
+  <last_four>8263</last_four>
+    <shipping_address>
+      <nickname>Work</nickname>
+         <first_name>Sampletest11</first_name>
+        <last_name>test1</last_name>>
+      <phone>(02)92735283</phone>
+     <email>sampletest11@gmail.com</email>
+      <country>NewZealand</country>
+    </shipping_address>
+</account>

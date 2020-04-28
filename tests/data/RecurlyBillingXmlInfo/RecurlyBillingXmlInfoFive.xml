@@ -1,0 +1,23 @@
+<account>
+  <account_code>5</account_code>
+  <parent_account_code>1</parent_account_code>
+  <email>TestSample76@hotmail.com</email>
+  <first_name>Test7Sample6</first_name>
+  <last_name>Sample76</last_name>
+  <address>
+    <country>US</country>
+  </address>
+   <year type="integer">2020</year>
+  <month type="integer">07</month>
+  <first_six>916426</first_six>
+  <last_four>6282</last_four>
+    <shipping_address>
+      <nickname>Work</nickname>
+      <first_name>Test7Sample6</first_name>
+      <last_name>Sample76</last_name>
+      <company>CRC Inc</company>
+      <phone>(722)-815481</phone>
+      <email>TestSample76@hotmail.com</email>
+      <country>US</country>
+    </shipping_address>
+</account>

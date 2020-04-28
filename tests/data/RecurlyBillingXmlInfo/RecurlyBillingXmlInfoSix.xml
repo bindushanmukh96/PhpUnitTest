@@ -1,0 +1,22 @@
+<account>
+  <account_code>6</account_code>
+  <parent_account_code>1</parent_account_code>
+  <email>sample36@test_5@mailbox2.co.in</email>
+  <first_name>Test84Sample</first_name>
+  <last_name>Sample81</last_name>
+  <address>
+    <country>Australia</country>
+  </address>
+  <year type="integer">2023</year>
+  <month type="integer">10</month>
+  <first_six>372572</first_six>
+  <last_four>3682</last_four>
+  <shipping_address>
+      <nickname>Work</nickname>
+      <first_name>Test84Sample</first_name>
+      <last_name>Sample81</last_name>
+      <phone>(017)-817372</phone>
+     <email>sample36@test_5@mailbox2.co.in</email>
+      <country>Australia</country>
+    </shipping_address>
+</account>
