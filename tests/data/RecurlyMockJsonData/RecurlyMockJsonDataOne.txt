@@ -8,6 +8,7 @@
          "last_name": "sample1",
          "company_name": "",
          "phone" : "(021)-846937",
+         "country" : "US",
          "vat_number": "",
          "tax_exempt": "",
          "entity_use_code": "AHFD",

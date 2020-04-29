@@ -36,6 +36,7 @@ class RecurlyDataTest extends TestCase
                       "last_name": "Sample76",
                       "company_name": "",
                       "phone": "(722)-815481",
+                      "country" : "US",
                       "vat_number": "",
                       "tax_exempt": "",
                       "entity_use_code": "AHFD",
@@ -108,6 +109,7 @@ class RecurlyDataTest extends TestCase
         $this->assertArrayHasKey('state',$RecurlyDataset['account details']);
         $this->assertArrayHasKey('created_at',$RecurlyDataset['account details']);
         $this->assertArrayHasKey('phone',$RecurlyDataset['account details']);
+        $this->assertArrayHasKey('country',$RecurlyDataset['account details']);
         
         $RecurlyDatasetTwo = json_decode(file_get_contents(__DIR__.'/data/RecurlyBillingJsonInfo/RecurlyMockBillingInfoFive.txt'),true);
         $this->assertArrayHasKey('account_code',$RecurlyDatasetTwo['account details']);
@@ -135,6 +137,7 @@ class RecurlyDataTest extends TestCase
         $this->assertIsString($RecurlyDataset['account details']['state']);
         $this->assertIsString($RecurlyDataset['account details']['created_at']);
         $this->assertIsString($RecurlyDataset['account details']['phone']);
+        $this->assertIsString($RecurlyDataset['account details']['country']);
 
         $RecurlyDatasetTwo = json_decode(file_get_contents(__DIR__.'/data/RecurlyBillingJsonInfo/RecurlyMockBillingInfoFive.txt'),true);
         $this->assertIsString($RecurlyDatasetTwo['account details']['account_code']);
@@ -148,6 +151,35 @@ class RecurlyDataTest extends TestCase
         $this->assertIsString($RecurlyDatasetTwo['account details']['card_number']);
         $this->assertIsString($RecurlyDatasetTwo['account details']['card_exp_date_month']);
         $this->assertIsString($RecurlyDatasetTwo['account details']['card_exp_date_year']);
+    }
+
+    //positive asset to check that parameters are not empty
+    public function testRecurlyJsonKeysNotEmpty()
+    {
+        $RecurlyDataset=json_decode(file_get_contents(__DIR__.'/data/RecurlyMockJsonData/RecurlyMockJsonDataFive.txt'),true);
+        $this->assertNotEmpty($RecurlyDataset['account details']['account_code']);
+        $this->assertNotEmpty($RecurlyDataset['account details']['parent_account_code']);
+        $this->assertNotEmpty($RecurlyDataset['account details']['bill_to']);
+        $this->assertNotEmpty($RecurlyDataset['account details']['first_name']);
+        $this->assertNotEmpty($RecurlyDataset['account details']['last_name']);
+        $this->assertNotEmpty($RecurlyDataset['account details']['email']);
+        $this->assertNotEmpty($RecurlyDataset['account details']['phone']);
+        $this->assertNotEmpty($RecurlyDataset['account details']['created_at']);
+        $this->assertNotEmpty($RecurlyDataset['account details']['state']);
+        $this->assertNotEmpty($RecurlyDataset['account details']['country']);
+
+        $RecurlyDatasetTwo = json_decode(file_get_contents(__DIR__.'/data/RecurlyBillingJsonInfo/RecurlyMockBillingInfoFive.txt'),true);
+        $this->assertNotEmpty($RecurlyDatasetTwo['account details']['account_code']);
+        $this->assertNotEmpty($RecurlyDatasetTwo['account details']['parent_account_code']);
+        $this->assertNotEmpty($RecurlyDatasetTwo['account details']['first_name']);
+        $this->assertNotEmpty($RecurlyDatasetTwo['account details']['last_name']);
+        $this->assertNotEmpty($RecurlyDatasetTwo['account details']['email']);
+        $this->assertNotEmpty($RecurlyDatasetTwo['account details']['phone']);
+        $this->assertNotEmpty($RecurlyDatasetTwo['account details']['state']);
+        $this->assertNotEmpty($RecurlyDatasetTwo['account details']['country']);
+        $this->assertNotEmpty($RecurlyDatasetTwo['account details']['card_number']);
+        $this->assertNotEmpty($RecurlyDatasetTwo['account details']['card_exp_date_month']);
+        $this->assertNotEmpty($RecurlyDatasetTwo['account details']['card_exp_date_year']);
     }
 
     //positive assert to check the parameters in xml object
@@ -173,6 +205,8 @@ class RecurlyDataTest extends TestCase
         $this->assertArrayHasKey('first_six',$RecurlyDatasetTwo);
         $this->assertArrayHasKey('last_four',$RecurlyDatasetTwo);
     }
+
+    
 
     //positive assert to check the Parameters in xml object is valid or not
     public function testRecurlyXmlHasValidData()

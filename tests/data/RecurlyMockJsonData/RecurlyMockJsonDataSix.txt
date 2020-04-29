@@ -8,6 +8,7 @@
 		"last_name": "Sample81",
 		"company_name": "",
 		"phone" : "(017)-817372",
+		"country" : "Australia",
 		"vat_number": "",
 		"tax_exempt": "",
 		"entity_use_code": "AHFD",
