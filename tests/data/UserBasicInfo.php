@@ -16,7 +16,7 @@ class UserBasicInfo
             "firstName"  =>  "    test",
             "lastName"   =>  "    sample4  ",
             "email"      =>  "    tsample@gmail.com",
-            "password"   =>  "     6cam56Aw  "
+            "password"   =>  "    6cam56Aw  "
           ]
         ];
         $datasetTwo = [

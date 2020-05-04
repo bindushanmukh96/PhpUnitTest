@@ -3,6 +3,7 @@ require 'data/UserBasicInfo.php';
 require 'data/UserCreditCardInfo.php';
 require 'data/ZapierData.php';
 require 'data/RecurlyMockInfo.php';
+require 'data/QuickBillingInfo.php';
 use PHPUnit\Framework\TestCase;
 
 // use function PHPUnit\Framework\assertContains;
@@ -16,6 +17,7 @@ class SignupTest extends TestCase
       * @dataProvider UserCreditCardInfo::userCreditCardInfoWithPositiveTestData()
       * @dataProvider UserCreditCardInfo::usercreditCardInfoWithSecondPositiveTestData()
       * @dataProvider ZapierData::zapierDataWithPositiveTestData()
+      * @dataProvider QuickBillingInfo::quickBillingInfoWithPositiveTestData()
       * @dataProvider RecurlyMockInfo::recurlyMockInfoWithPositiveTestData()
       * @dataProvider RecurlyMockInfo::recurlyMockInfoWithSecondPositiveTestData()
       */
@@ -53,6 +55,7 @@ class SignupTest extends TestCase
       * @dataProvider ZapierData::zapierDataWithSecondPositiveTestData()
       * @dataProvider RecurlyMockInfo::recurlyMockInfoWithPositiveTestData()
       * @dataProvider RecurlyMockInfo::recurlyMockInfoWithSecondPositiveTestData()
+      * @dataProvider QuickBillingInfo::quickBillingInfoWithPositiveTestData()
       */
     public function testArrayKeyIsString($data)
     {
