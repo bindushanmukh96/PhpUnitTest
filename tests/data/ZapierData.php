@@ -113,48 +113,47 @@ class ZapierData
      * 
      * @return array 
      */
-    public function zapierDataWithNegativeTestData()
+    public function zapierDataWithNegativeTestData( )
     {
-        return [
-            'Negative Test Data set one' => [
-                [
-                  "firstName"  =>  "Test11Data1^%",
-                  "lastName"   =>  "Sample11&^",
-                  "email"      =>  "TestSample_a@@.com"
-                ]
-            ],
-            'Negative Test Data set two' => [
-                [
-                  "firstName"  =>  "Test22Data2#@%",
-                  "lastName"   =>  "Sample22*&^@",
-                  "email"      =>  "testingsample..@mail.org"
-                ]
-
-            ],
-            'Negative Test Data set three' => [
-                [
-                  "firstName"  =>  "Test33Data3*&^",
-                  "lastName"   =>  "Sample3&*(",
-                  "email"      =>  "SampleTest67_02ih@@yopmail.com1233"
-                ]
-            ],
-
-            'Negative Test Data set four' => [
-                [
-                  "firstName"   =>   "testsample#@%",
-                  "lastName"    =>   "data6*(%",
-                  "email"       =>   "Sample.442test@_pmail..org"
-                ]
-            ],
-            'Negative Test Data set five' => [
-                [
-                  "firstName"   => "test7sample&^%",
-                  "lastName"    =>  "data4(*^$",
-                  "email"       =>  ".sampletesting-998.jn@.co.in",
-                ]
-            ]
+      return [
+        'Negative Test Data set one' => [
+          [
+            "firstName"  =>  "Test11Data1^%",
+            "lastName"   =>  "Sample11&^",
+            "email"      =>  "TestSample_a@@.com"
+          ]
+        ],
+        'Negative Test Data set two' => [
+          [
+            "firstName"  =>  "Test22Data2#@%",
+            "lastName"   =>  "Sample22*&^@",
+            "email"      =>  "testingsample..@mail.org"
+          ]
+        ],
+        'Negative Test Data set three' => [
+          [
+            "firstName"  =>  "Test33Data3*&^",
+            "lastName"   =>  "Sample3&*(",
+            "email"      =>  "SampleTest67_02ih@@yopmail.com1233"
+          ]
+        ],
+        'Negative Test Data set four' => [
+          [
+            "firstName"   =>   "testsample#@%",
+            "lastName"    =>   "data6*(%",
+            "email"       =>   "Sample.442test@_pmail..org"
+          ]
+        ],
+        'Negative Test Data set five' => [
+          [
+            "firstName"   => "test7sample&^%",
+            "lastName"    =>  "data4(*^$",
+            "email"       =>  ".sampletesting-998.jn@.co.in",
+          ]
+        ]
         ];
     }
+
     /**
      * negative Test Data in the form of Associative Array
      * Use Test Data to validate  the condition where one parameter is empty
@@ -218,13 +217,13 @@ class ZapierData
      */
     public function zapierDataWithAllParametersEmpty()
     {
-        return [
-            [[
-                  "firstName"  =>  "",
-                  "lastName"   =>  "",
-                  "email"      =>  ""
-            ]]
-        ];
+      return [
+        [[
+            "firstName"  =>  "",
+            "lastName"   =>  "",
+            "email"      =>  ""
+        ]]
+      ];
     }
         
     /**

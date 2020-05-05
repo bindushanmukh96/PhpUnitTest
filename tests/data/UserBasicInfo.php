@@ -112,13 +112,13 @@ class UserBasicInfo
         ];
       
         return
-        [
-          'negative test data set one'    => $datasetOne,
-          'negative test data set two'    => $datasetTwo,
-          'negative test  data set three' => $datasetThree,
-          'negative test data set four'   => $datasetFour,
-          'negative test data set five'   => $datasetFive
-        ];
+          [
+            'negative test data set one'    => $datasetOne,
+            'negative test data set two'    => $datasetTwo,
+            'negative test  data set three' => $datasetThree,
+            'negative test data set four'   => $datasetFour,
+            'negative test data set five'   => $datasetFive
+          ];
     }
      
      /**
@@ -155,20 +155,20 @@ class UserBasicInfo
         ];
         $datasetFour = [
           [
-             "firstName"  =>  "",
-             "lastName"   =>  "",
-             "email"      =>  "",
-             "password"   =>  "1267"
+            "firstName"  =>  "",
+            "lastName"   =>  "",
+            "email"      =>  "",
+            "password"   =>  "1267"
           ]
         ];
       
       return
-       [
+        [
           'negative test data set one'   => $datasetOne,
           'negative test data set two'   => $datasetTwo,
           'negative test data set three' => $datasetThree,
           'negative test data set four'  => $datasetFour
-      ];
+        ];
     }
     
      /**
@@ -222,12 +222,12 @@ class UserBasicInfo
           ]
         ];
         $datasetFour = [
-            [
-              "firstName"  =>  "",
-              "lastName"   =>  "Sample91", 
-              "email"      =>  "Sample91@yahoo.co.in",
-              "password"   =>  ""
-            ]
+          [
+            "firstName"  =>  "",
+            "lastName"   =>  "Sample91", 
+            "email"      =>  "Sample91@yahoo.co.in",
+            "password"   =>  ""
+          ]
         ];
         $datasetFive = [
           [
