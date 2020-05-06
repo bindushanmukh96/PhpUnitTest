@@ -13,42 +13,47 @@ class UserBillingInfo
     {
         $datasetOne = [
           [
-            "fullAddress"  =>  "162 addressSample",
-            "cityName"     =>  "Newyork",
-            "state"        =>  "California",
-            "zipCode"      =>  "96678"
+            "fullAddress"    =>  "162 addressSample",
+            "cityName"       =>  "Newyork",
+            "state"          =>  "California",
+            "zipCode"        =>  "96678",
+            "recurly_token"  =>  "hdheuka67riebksswhshssiwyaleusodbwqy"
           ]
         ];
         $datasetTwo = [
           [
-            "fullAddress"  =>  "147 Addresstest",
-            "cityName"     =>  "San Francisco",
-            "state"        =>  "virginia",
-            "zipCode"      =>  "83962"
+            "fullAddress"    =>  "147 Addresstest",
+            "cityName"       =>  "San Francisco",
+            "state"          =>  "virginia",
+            "zipCode"        =>  "83962",
+            "recurly_token"  =>  "qwusgw791hdheuka67riebksswhshsd"
           ]
         ];
         $datasetThree = [
           [
-            "fullAddress"  =>  "629 address TestRoad",
-            "cityName"     =>  "chicago",
-            "state"        =>  "Indiana",
-            "zipCode"      =>  "93749"
+            "fullAddress"    =>  "629 address TestRoad",
+            "cityName"       =>  "chicago",
+            "state"          =>  "Indiana",
+            "zipCode"        =>  "93749",
+            "recurly_token"  =>  "skwoans5j72aksbahdheuka67riebksswhshs"
           ]
         ];
         $datasetFour = [
           [
-            "fullAddress"  =>  "948 testAddress street 8",
-            "cityName"     =>  "hyderabad",
-            "state"        =>  "Telangana",
-            "zipCode"      =>  "73892"
+            "fullAddress"    =>  "948 testAddress street 8",
+            "cityName"       =>  "hyderabad",
+            "state"          =>  "Telangana",
+            "zipCode"        =>  "73892",
+            "recurly_token"  =>  "sjsgqyg61hjsbav16bjabaeuka67riebksswhshs"
           ]
         ];
         $datasetFive = [
           [
-            "fullAddress"  =>  "283 street 9 testAddress",
-            "cityName"     =>  "washington",
-            "state"        =>  "Indiana",
-            "zipCode"      =>  "78945"
+            "fullAddress"    =>  "283 street 9 testAddress",
+            "cityName"       =>  "washington",
+            "state"          =>  "Indiana",
+            "zipCode"        =>  "78945",
+            "recurly_token"  =>  "aoqajwba7bzmqab1jnsa67riebksswhshs"
           ]
         ];
         
@@ -72,34 +77,38 @@ class UserBillingInfo
     {
         $datasetOne = [
           [
-            "fullAddress"  =>  "638 ^%$#ess",
-            "cityName"     =>  "728394",
-            "state"        =>  "Iowa&%$",
-            "zipCode"      =>  "^#%829"
+            "fullAddress"    =>  "638 ^%$#ess",
+            "cityName"       =>  "728394",
+            "state"          =>  "Iowa&%$",
+            "zipCode"        =>  "^#%829",
+            "recurly_token"  =>  "suq*7hdheuka67riebksswhshs"
           ]
         ];
         $datasetTwo = [
           [
-            "fullAddress"  =>  "Hteu&^20&",
-            "cityName"     =>  "273Hy8",
-            "state"        =>  "juwie13@@",
-            "zipCode"      =>  "nshwihd"
+            "fullAddress"    =>  "Hteu&^20&",
+            "cityName"       =>  "273Hy8",
+            "state"          =>  "juwie13@@",
+            "zipCode"        =>  "nshwihd",
+            "recurly_token"  =>  "jajg^*jsaywhdheuka67riebksswhshs"
           ]
         ];
         $datasetThree = [
           [
-            "fullAddress"  =>  "842 hwi4b&^#",
-            "cityName"     =>  "$6teyd",
-            "state"        =>  "&@*34638h",
-            "zipCode"      =>  "72"
+            "fullAddress"    =>  "842 hwi4b&^#",
+            "cityName"       =>  "$6teyd",
+            "state"          =>  "&@*34638h",
+            "zipCode"        =>  "72",
+            "recurly_token"  =>  "skajdv&bjsva67riebksswhshs"
           ]
         ];
         $datasetFour= [
           [
-            "fullAddress"  =>  "sje 728^%$ hsbd",
-            "cityName"     =>  "indiana^54",
-            "state"        =>  "^&87hO",
-            "zipCode"      =>  "62577943689"
+            "fullAddress"    =>  "sje 728^%$ hsbd",
+            "cityName"       =>  "indiana^54",
+            "state"          =>  "^&87hO",
+            "zipCode"        =>  "62577943689",
+            "recurly_token"  =>  "hsjbHfwfuwijana7*ss(mah7riebksswhshs"
           ]
         ];
         $datasetFive = [
@@ -107,7 +116,8 @@ class UserBillingInfo
             "fullAddress"  =>  "738 ^&*hsbdh",
             "cityName"     =>  "&6hsuz",
             "state"        =>  "virgina%^28",
-            "zipCode"      =>  "98129#"
+            "zipCode"      =>  "98129#",
+            "recurly_token"  =>  "ikwissja^kssg(djja)6sj7riebksswhshs"
           ]
         ];
       
@@ -131,34 +141,47 @@ class UserBillingInfo
     {
         $datasetOne = [
           [
-            "fullAddress"  =>  "283 testAddress street 23",
-            "cityName"     =>  "",
-            "state"        =>  "",
-            "zipCode"      =>  ""
+            "fullAddress"    =>  "283 testAddress street 23",
+            "cityName"       =>  "",
+            "state"          =>  "",
+            "zipCode"        =>  "",
+            "recurly_token"  =>  ""
           ]
         ];
         $datasetTwo = [
           [
-            "fullAddress"  =>  "",
-            "cityName"     =>  "",
-            "state"        =>  "Indiana",
-            "zipCode"      =>  ""
+            "fullAddress"    =>  "",
+            "cityName"       =>  "",
+            "state"          =>  "Indiana",
+            "zipCode"        =>  "",
+            "recurly_token"  =>  ""
           ] 
         ];
         $datasetThree = [
           [
-            "fullAddress"  =>  "",
-            "cityName"     =>  "Los Angeles",
-            "state"        =>  "",
-            "zipCode"      =>  ""
+            "fullAddress"    =>  "",
+            "cityName"       =>  "Los Angeles",
+            "state"          =>  "",
+            "zipCode"        =>  "",
+            "recurly_token"  =>  ""
           ]
         ];
         $datasetFour = [
           [
-            "fullAddress"  =>  "",
-            "cityName"     =>  "",
-            "state"        =>  "",
-            "zipCode"      =>  "72&8"
+            "fullAddress"    =>  "",
+            "cityName"       =>  "",
+            "state"          =>  "",
+            "zipCode"        =>  "72&8",
+            "recurly_token"  =>  ""
+          ]
+        ];
+        $datasetFive = [
+          [
+            "fullAddress"    =>  "",
+            "cityName"       =>  "",
+            "state"          =>  "",
+            "zipCode"        =>  "",
+            "recurly_token"  =>  "hdkysb76sjddjxmsgsk&&"
           ]
         ];
       
@@ -167,7 +190,9 @@ class UserBillingInfo
         'negative test data set one'   => $datasetOne,
         'negative test data set two'   => $datasetTwo,
         'negative test data set three' => $datasetThree,
-        'negative test data set four'  => $datasetFour
+        'negative test data set four'  => $datasetFour,
+        'negative test data set five'  => $datasetFive
+        
       ];
     }
     
@@ -181,50 +206,56 @@ class UserBillingInfo
     {  
         $datasetOne = [
           [
-            "fullAddress"  =>  "",
-            "cityName"     =>  "california",
-            "state"        =>  "",
-            "zipCode"      =>  "829459R"
+            "fullAddress"    =>  "",
+            "cityName"       =>  "california",
+            "state"          =>  "",
+            "zipCode"        =>  "829459R",
+            "recurly_token"  =>  "hdkysb76sjddjxmsgsk&&"
           ]
         ];
         $datasetTwo = [
           [
-            "fullAddress"  =>  "283 westroad street 6",
-            "cityName"     =>  "",
-            "state"        =>  "virginia",
-            "zipCode"      =>  ""
+            "fullAddress"    =>  "283 westroad street 6",
+            "cityName"       =>  "",
+            "state"          =>  "virginia",
+            "zipCode"        =>  "",
+            "recurly_token"  =>  "jkikysb76sjddjxmsgsk&&dhsyw"
           ]
         ];
         $datasetThree = [
           [
-            "fullAddress"  =>  "",
-            "cityName"     =>  "washington",
-            "state"        =>  "",
-            "zipCode"      =>  "7792470326"
+            "fullAddress"    =>  "",
+            "cityName"       =>  "washington",
+            "state"          =>  "",
+            "zipCode"        =>  "7792470326",
+            "recurly_token"  =>  "jkikysb76sjddjxmsgsk&&dh23dyrissyw"
           ]
         ];
         $datasetFour = [
           [
-            "fullAddress"  =>  "382 testAddressSample",
-            "cityName"     =>  "",
-            "state"        =>  "Virginia",
-            "zipCode"      =>  "8294722$"
+            "fullAddress"    =>  "382 testAddressSample",
+            "cityName"       =>  "",
+            "state"          =>  "Virginia",
+            "zipCode"        =>  "8294722$",
+            "recurly_token"  =>  "9))kikysb76sjddjxmsgsk&&dh23dyrissyw"
           ]
         ];
         $datasetFive = [
           [
-            "fullAddress"  =>  "388 2 Sample test address ",
-            "cityName"     =>  "",
-            "state"        =>  "Indiana&",
-            "zipCode"      =>  ""
+            "fullAddress"    =>  "388 2 Sample test address ",
+            "cityName"       =>  "",
+            "state"          =>  "Indiana&",
+            "zipCode"        =>  "",
+            "recurly_token"  =>  ""
           ]
         ];
         $datasetSix = [
           [
-            "fullAddress"  =>  "",
-            "cityName"     =>  "california",
-            "state"        =>  "",
-            "zipCode"      =>  "826482I"
+            "fullAddress"    =>  "",
+            "cityName"       =>  "california",
+            "state"          =>  "",
+            "zipCode"        =>  "826482I",
+            "recurly_token"  =>  ""
           ]
         ];
         
