@@ -99,7 +99,7 @@ class UserBillingInfo
             "fullAddress"  =>  "sje 728^%$ hsbd",
             "cityName"     =>  "indiana^54",
             "state"        =>  "^&87hO",
-            "zipCode"      =>  "625779436"
+            "zipCode"      =>  "62577943689"
           ]
         ];
         $datasetFive = [
@@ -200,7 +200,7 @@ class UserBillingInfo
             "fullAddress"  =>  "",
             "cityName"     =>  "washington",
             "state"        =>  "",
-            "zipCode"      =>  "779247"
+            "zipCode"      =>  "7792470326"
           ]
         ];
         $datasetFour = [
