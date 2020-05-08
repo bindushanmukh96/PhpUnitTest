@@ -13,39 +13,39 @@ class ZapierData
     {
         return [
             'positive Test Data set one' => [
-                [
-                  "firstName"  =>  "Test11Data1",
-                  "lastName"   =>  "Sample11",
-                  "email"      =>  "test11Data1Sample11@gmail.com"
-                ]
+              [
+                "firstName"  =>  "Test11Data1",
+                "lastName"   =>  "Sample11",
+                "email"      =>  "test11Data1Sample11@gmail.com"
+              ]
             ],
             'positive Test Data set two' => [
-                [
-                  "firstName"  =>  "Test22Data2",
-                  "lastName"   =>  "Sample22",
-                  "email"      =>  "test22Data2Sample@yahoo.com"
-                ]
+              [
+                "firstName"  =>  "Test22Data2",
+                "lastName"   =>  "Sample22",
+                "email"      =>  "test22Data2Sample@yahoo.com"
+              ]
             ],
             'positive Test Data set three' => [
-                [
-                  "firstName"  =>  "Test33Data3",
-                  "lastName"   =>  "Sample3",
-                  "email"     =>  "test33Data2@hotmail.co.in"
-                ]
+              [
+                "firstName"  =>  "Test33Data3",
+                "lastName"   =>  "Sample3",
+                "email"     =>  "test33Data2@hotmail.co.in"
+              ]
             ],
             'positive Test Data set four' => [
-                [
-                  "firstName"  =>  "testsample",
-                  "lastName"   =>  "data6",
-                  "email"      =>  "testdata6sample6@hotmail.com"
-                ]
+              [
+                "firstName"  =>  "testsample",
+                "lastName"   =>  "data6",
+                "email"      =>  "testdata6sample6@hotmail.com"
+              ]
             ],
             'positive Test Data set five' => [
-                [
-                  "firstName"  =>  "test7sample",
-                  "lastName"   =>  "data4",
-                  "email"      =>  "testdat7a@mailbox.org"
-                ]
+              [
+                "firstName"  =>  "test7sample",
+                "lastName"   =>  "data4",
+                "email"      =>  "testdat7a@mailbox.org"
+              ]
             ]
         ];
     }
@@ -60,50 +60,48 @@ class ZapierData
     public function zapierDataWithSecondPositiveTestData()
     {
             $datasetOne = [
-                [
-                  "firstName"  =>  "Test1data19",
-                  "lastName"   =>  "Sample23",
-                  "email"      =>  "test24Data1Sample11@gmail.com"
-                ]
+              [
+                "firstName"  =>  "Test1data19",
+                "lastName"   =>  "Sample23",
+                "email"      =>  "test24Data1Sample11@gmail.com"
+              ]
             ];
             $datasetTwo = [
-                [
-                  "firstName"  =>  "Test72",
-                  "lastName"   =>  "Sample62",
-                  "email"      =>  "test92Data2Sample@yahoo.com"
-                ]
+              [
+                "firstName"  =>  "Test72",
+                "lastName"   =>  "Sample62",
+                "email"      =>  "test92Data2Sample@yahoo.com"
+              ]
             ];
             $datasetThree = [
-                [
-                  "firstName"  =>  "Test33Data3",
-                  "lastName"   =>  "Sample3",
-                  "email"      =>  "test33Data2@hotmail.co.in"
-                ]
+              [
+                "firstName"  =>  "Test33Data3",
+                "lastName"   =>  "Sample3",
+                "email"      =>  "test33Data2@hotmail.co.in"
+              ]
             ];
             $datasetFour = [
-                [
-                  "firstName"  =>  "test1sample1",
-                  "lastName"   =>  "data9",
-                  "email"      =>  "testdata3sample3@hotmail.com"
-                ]
+              [
+                "firstName"  =>  "test1sample1",
+                "lastName"   =>  "data9",
+                "email"      =>  "testdata3sample3@hotmail.com"
+              ]
             ];
-
             $datasetFive = [
-                [
-                  "firstName"  =>  "test7sample",
-                  "lastName"   =>  "data4",
-                  "email"      =>  "testdat7a@mailbox.org"
-                ]
+              [
+                "firstName"  =>  "test7sample",
+                "lastName"   =>  "data4",
+                "email"      =>  "testdat7a@mailbox.org"
+              ]
             ];
             
             return 
             [
-                'positive test data set one'   => $datasetOne,
-                'positive test data set two'   => $datasetTwo,
-                'positive test data set three' => $datasetThree,
-                'positive test data set four'  => $datasetFour,
-                'positive test data set five'  => $datasetFive
-
+              'positive test data set one'   => $datasetOne,
+              'positive test data set two'   => $datasetTwo,
+              'positive test data set three' => $datasetThree,
+              'positive test data set four'  => $datasetFour,
+              'positive test data set five'  => $datasetFive
             ];
     }
     
@@ -164,46 +162,46 @@ class ZapierData
         {
             return [
                 'negative Test Data set one' => [
-                    [
-                      "firstName"   =>   "TestSample1$",
-                      "lastName"    =>   "Data11$",
-                      "email"       =>   ""
-                    ]
+                  [
+                    "firstName"   =>   "TestSample1$",
+                    "lastName"    =>   "Data11$",
+                    "email"       =>   ""
+                  ]
                 ],
                 'negative Test Data set Two' => [
-                    [
-                      "firstName" =>  "TestSample2",
-                      "lastName"  =>  "",
-                      "email"     =>  "TestSample2@mailbox..org"
-                    ]
+                  [
+                    "firstName" =>  "TestSample2",
+                    "lastName"  =>  "",
+                    "email"     =>  "TestSample2@mailbox..org"
+                  ]
                 ],
                 'negative Test Data set Three' => [
-                    [
-                      "firstName"  =>  "",
-                      "lastName"   =>  "Sample#Data3",
-                      "email"      =>  "SampleData3@gmail..com"
-                    ]
+                  [
+                    "firstName"  =>  "",
+                    "lastName"   =>  "Sample#Data3",
+                    "email"      =>  "SampleData3@gmail..com"
+                  ]
                 ],
                 'negative Test data set Four' => [
-                    [
-                      "firstName"  =>  "Sample4",
-                      "lastName"   =>  "",
-                      "email"      =>  ""
-                    ]
+                  [
+                    "firstName"  =>  "Sample4",
+                    "lastName"   =>  "",
+                    "email"      =>  ""
+                  ]
                 ],
                 'negative Test data set Five' => [
-                    [
-                      "firstName"  =>  "",
-                      "lastName"   =>  "Tsample1",
-                      "email"      =>  ""
-                    ]
+                  [
+                    "firstName"  =>  "",
+                    "lastName"   =>  "Tsample1",
+                    "email"      =>  ""
+                  ]
                 ],
                 'negative Test data set Six' => [
-                    [
-                      "firstName"  =>  "",
-                      "lastName"   =>  "",
-                      "email"      =>  "TsampleData2@mailbox.org"
-                    ]
+                  [
+                    "firstName"  =>  "",
+                    "lastName"   =>  "",
+                    "email"      =>  "TsampleData2@mailbox.org"
+                  ]
                 ],
 
             ];
