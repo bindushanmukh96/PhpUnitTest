@@ -4,6 +4,7 @@ require 'data/UserCreditCardInfo.php';
 require 'data/ZapierData.php';
 require 'data/RecurlyMockInfo.php';
 require 'data/UserBillingInfo.php';
+require 'data/CreditHeroChallengeInfo.php';
 use PHPUnit\Framework\TestCase;
 
 // use function PHPUnit\Framework\assertContains;
@@ -20,6 +21,7 @@ class SignupTest extends TestCase
       * @dataProvider UserBillingInfo::userBillingInfoWithPositiveTestData()
       * @dataProvider RecurlyMockInfo::recurlyMockInfoWithPositiveTestData()
       * @dataProvider RecurlyMockInfo::recurlyMockInfoWithSecondPositiveTestData()
+      * @dataProvider CreditHeroChallengeInfo::creditHeroChallengeInfoWithSecondPositiveTestData()
       */
     public function testArrayKeyNotEmpty($data)
     {
@@ -56,6 +58,7 @@ class SignupTest extends TestCase
       * @dataProvider RecurlyMockInfo::recurlyMockInfoWithPositiveTestData()
       * @dataProvider RecurlyMockInfo::recurlyMockInfoWithSecondPositiveTestData()
       * @dataProvider UserBillingInfo::userBillingInfoWithPositiveTestData()
+      * @dataProvider CreditHeroChallengeInfo::creditHeroChallengeInfoWithSecondPositiveTestData()
       */
     public function testArrayKeyIsString($data)
     {
@@ -73,8 +76,7 @@ class SignupTest extends TestCase
     {
       foreach($data as $key)
       {
-   
-      $this->assertIsNotString($key);
+        $this->assertIsNotString($key);
       }
     }
     
