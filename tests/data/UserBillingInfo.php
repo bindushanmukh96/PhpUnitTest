@@ -17,7 +17,7 @@ class UserBillingInfo
             "cityName"       =>  "Newyork",
             "state"          =>  "California",
             "zipCode"        =>  "96678",
-            "recurly_token"  =>  "hdheuka67riebksswhshssiwyaleusodbwqy"
+            "recurly-token"  =>  "hdheuka67riebksswhshssiwyaleusodbwqy"
           ]
         ];
         $datasetTwo = [
@@ -26,7 +26,7 @@ class UserBillingInfo
             "cityName"       =>  "San Francisco",
             "state"          =>  "virginia",
             "zipCode"        =>  "83962",
-            "recurly_token"  =>  "qwusgw791hdheuka67riebksswhshsd"
+            "recurly-token"  =>  "qwusgw791hdheuka67riebksswhshsd"
           ]
         ];
         $datasetThree = [
@@ -35,7 +35,7 @@ class UserBillingInfo
             "cityName"       =>  "chicago",
             "state"          =>  "Indiana",
             "zipCode"        =>  "93749",
-            "recurly_token"  =>  "skwoans5j72aksbahdheuka67riebksswhshs"
+            "recurly-token"  =>  "skwoans5j72aksbahdheuka67riebksswhshs"
           ]
         ];
         $datasetFour = [
@@ -44,7 +44,7 @@ class UserBillingInfo
             "cityName"       =>  "hyderabad",
             "state"          =>  "Telangana",
             "zipCode"        =>  "73892",
-            "recurly_token"  =>  "sjsgqyg61hjsbav16bjabaeuka67riebksswhshs"
+            "recurly-token"  =>  "sjsgqyg61hjsbav16bjabaeuka67riebksswhshs"
           ]
         ];
         $datasetFive = [
@@ -53,7 +53,7 @@ class UserBillingInfo
             "cityName"       =>  "washington",
             "state"          =>  "Indiana",
             "zipCode"        =>  "78945",
-            "recurly_token"  =>  "aoqajwba7bzmqab1jnsa67riebksswhshs"
+            "recurly-token"  =>  "aoqajwba7bzmqab1jnsa67riebksswhshs"
           ]
         ];
         
@@ -81,7 +81,7 @@ class UserBillingInfo
             "cityName"       =>  "728394",
             "state"          =>  "Iowa&%$",
             "zipCode"        =>  "^#%829",
-            "recurly_token"  =>  "suq*7hdheuka67riebksswhshs"
+            "recurly-token"  =>  "suq*7hdheuka67riebksswhshs"
           ]
         ];
         $datasetTwo = [
@@ -90,7 +90,7 @@ class UserBillingInfo
             "cityName"       =>  "273Hy8",
             "state"          =>  "juwie13@@",
             "zipCode"        =>  "nshwihd",
-            "recurly_token"  =>  "jajg^*jsaywhdheuka67riebksswhshs"
+            "recurly-token"  =>  "jajg^*jsaywhdheuka67riebksswhshs"
           ]
         ];
         $datasetThree = [
@@ -99,7 +99,7 @@ class UserBillingInfo
             "cityName"       =>  "$6teyd",
             "state"          =>  "&@*34638h",
             "zipCode"        =>  "72",
-            "recurly_token"  =>  "skajdv&bjsva67riebksswhshs"
+            "recurly-token"  =>  "skajdv&bjsva67riebksswhshs"
           ]
         ];
         $datasetFour= [
@@ -108,7 +108,7 @@ class UserBillingInfo
             "cityName"       =>  "indiana^54",
             "state"          =>  "^&87hO",
             "zipCode"        =>  "62577943689",
-            "recurly_token"  =>  "hsjbHfwfuwijana7*ss(mah7riebksswhshs"
+            "recurly-token"  =>  "hsjbHfwfuwijana7*ss(mah7riebksswhshs"
           ]
         ];
         $datasetFive = [
@@ -117,7 +117,7 @@ class UserBillingInfo
             "cityName"       =>  "&6hsuz",
             "state"          =>  "virgina%^28",
             "zipCode"        =>  "98129#",
-            "recurly_token"  =>  "ikwissja^kssg(djja)6sj7riebksswhshs"
+            "recurly-token"  =>  "ikwissja^kssg(djja)6sj7riebksswhshs"
           ]
         ];
       
@@ -145,7 +145,7 @@ class UserBillingInfo
             "cityName"       =>  "",
             "state"          =>  "",
             "zipCode"        =>  "",
-            "recurly_token"  =>  ""
+            "recurly-token"  =>  ""
           ]
         ];
         $datasetTwo = [
@@ -154,7 +154,7 @@ class UserBillingInfo
             "cityName"       =>  "",
             "state"          =>  "Indiana",
             "zipCode"        =>  "",
-            "recurly_token"  =>  ""
+            "recurly-token"  =>  ""
           ] 
         ];
         $datasetThree = [
@@ -163,7 +163,7 @@ class UserBillingInfo
             "cityName"       =>  "Los Angeles",
             "state"          =>  "",
             "zipCode"        =>  "",
-            "recurly_token"  =>  ""
+            "recurly-token"  =>  ""
           ]
         ];
         $datasetFour = [
@@ -172,7 +172,7 @@ class UserBillingInfo
             "cityName"       =>  "",
             "state"          =>  "",
             "zipCode"        =>  "72&8",
-            "recurly_token"  =>  ""
+            "recurly-token"  =>  ""
           ]
         ];
         $datasetFive = [
@@ -181,7 +181,7 @@ class UserBillingInfo
             "cityName"       =>  "",
             "state"          =>  "",
             "zipCode"        =>  "",
-            "recurly_token"  =>  "hdkysb76sjddjxmsgsk&&"
+            "recurly-token"  =>  "hdkysb76sjddjxmsgsk&&"
           ]
         ];
       
@@ -210,7 +210,7 @@ class UserBillingInfo
             "cityName"       =>  "california",
             "state"          =>  "",
             "zipCode"        =>  "829459R",
-            "recurly_token"  =>  "hdkysb76sjddjxmsgsk&&"
+            "recurly-token"  =>  "hdkysb76sjddjxmsgsk&&"
           ]
         ];
         $datasetTwo = [
@@ -219,7 +219,7 @@ class UserBillingInfo
             "cityName"       =>  "",
             "state"          =>  "virginia",
             "zipCode"        =>  "",
-            "recurly_token"  =>  "jkikysb76sjddjxmsgsk&&dhsyw"
+            "recurly-token"  =>  "jkikysb76sjddjxmsgsk&&dhsyw"
           ]
         ];
         $datasetThree = [
@@ -228,7 +228,7 @@ class UserBillingInfo
             "cityName"       =>  "washington",
             "state"          =>  "",
             "zipCode"        =>  "7792470326",
-            "recurly_token"  =>  "jkikysb76sjddjxmsgsk&&dh23dyrissyw"
+            "recurly-token"  =>  "jkikysb76sjddjxmsgsk&&dh23dyrissyw"
           ]
         ];
         $datasetFour = [
@@ -237,7 +237,7 @@ class UserBillingInfo
             "cityName"       =>  "",
             "state"          =>  "Virginia",
             "zipCode"        =>  "8294722$",
-            "recurly_token"  =>  "9))kikysb76sjddjxmsgsk&&dh23dyrissyw"
+            "recurly-token"  =>  "9))kikysb76sjddjxmsgsk&&dh23dyrissyw"
           ]
         ];
         $datasetFive = [
@@ -246,7 +246,7 @@ class UserBillingInfo
             "cityName"       =>  "",
             "state"          =>  "Indiana&",
             "zipCode"        =>  "",
-            "recurly_token"  =>  ""
+            "recurly-token"  =>  ""
           ]
         ];
         $datasetSix = [
@@ -255,7 +255,7 @@ class UserBillingInfo
             "cityName"       =>  "california",
             "state"          =>  "",
             "zipCode"        =>  "826482I",
-            "recurly_token"  =>  ""
+            "recurly-token"  =>  ""
           ]
         ];
         
